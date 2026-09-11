@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Sole Via Entertainment — Estúdio de jogos mobile · Zen Bubbles e Cap Kickers",
+    "description": "A Sole Via Entertainment é um estúdio independente de jogos mobile em Miami, criador de Zen Bubbles e Cap Kickers — jogos pequenos e táteis para iPhone e Android. Grátis, offline e sem cadastro."
+  },
+  "og": {
+    "title": "Sole Via Entertainment — Jogos pequenos que você sente",
+    "description": "Estúdio independente de jogos mobile em Miami. Criadores de Zen Bubbles e Cap Kickers para iPhone e Android."
+  },
+  "a11y": {
+    "skip": "Pular para o conteúdo"
+  },
+  "brand": {
+    "home_label": "Sole Via Entertainment — voltar ao topo"
+  },
+  "nav": {
+    "label": "Principal",
+    "games": "Jogos",
+    "studio": "Estúdio",
+    "support": "Suporte",
+    "cta": "Baixe os jogos",
+    "lang_label": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Estúdio independente de jogos mobile · Miami, Flórida",
+    "h1": "Jogos pequenos que você&nbsp;<em>sente</em>.",
+    "lede": "Transformamos coisas do dia a dia que dá vontade de tocar — uma folha de plástico bolha, uma tampinha sobre a mesa — em jogos rápidos e tranquilos para iPhone e Android. Grátis, offline e sem cadastro.",
+    "cta1": "Conheça nossos jogos",
+    "cta2": "Trabalhe com a gente",
+    "facts_label": "O estúdio em resumo",
+    "fact1": "<strong>2</strong> jogos no ar",
+    "sheet_label": "Plástico bolha interativo. Toque numa bolha para estourar.",
+    "cap_label": "Ir para Cap Kickers",
+    "popped": "estouradas",
+    "msg0": "Vai, estoura uma.",
+    "note": "Bolhas e sons de estouro de verdade, direto do <a href=\"#zen-bubbles\">Zen Bubbles</a>."
+  },
+  "games": {
+    "eyebrow": "Nossos jogos",
+    "h2": "Dois jogos. Um dedo para cada.",
+    "lede": "Os dois são grátis na App Store e no Google Play, funcionam totalmente offline e falam português, inglês e espanhol."
+  },
+  "tags": {
+    "free": "Grátis",
+    "offline": "Funciona offline",
+    "rated": "Classificação livre (4+)"
+  },
+  "stores": {
+    "apple_alt": "Baixar na App Store",
+    "google_alt": "Disponível no Google Play"
+  },
+  "zen": {
+    "icon_alt": "Ícone do app Zen Bubbles",
+    "kicker": "Casual · Relaxamento",
+    "sub": "Estoure e relaxe",
+    "pitch": "O estouro estranhamente satisfatório do plástico bolha de verdade, numa jornada tranquila entre ilhas. Complete uma fase, veja a bolhinha pular para a próxima e tente bater o seu melhor tempo.",
+    "f1": "<b>Quatro mundos-ilha</b> — as bolhas saem da grade, começam a flutuar e depois se escondem atrás de escudos deslizantes.",
+    "f2": "<b>Desafio Pop</b> — uma missão surpresa, com recompensa surpresa, aparece a cada poucas horas.",
+    "f3": "<b>Prepare-se</b> — bombas, flocos de neve e estilos de bolha colecionáveis na Loja.",
+    "f4": "<b>Estouros suaves e vibração</b> — música calma e um toque leve a cada estouro.",
+    "tags_label": "Sobre o Zen Bubbles",
+    "aka_block": "<p class=\"aka\">Nos celulares em português, ele aparece como <b>Plástico Bolha</b>.</p>",
+    "shot1": "Tela inicial do Zen Bubbles: a bolha mascote sorrindo numa ilha de plástico bolha ao pôr do sol",
+    "shot2": "Mapa da jornada com as ilhas do Mundo 1 e do Mundo 2",
+    "shot3": "Partida: bolhas médias sobre o plástico bolha, com uma bomba e um floco de neve",
+    "shot4": "Loja com bombas, congelar tempo e os estilos de bolha Neon, Oceano e Pôr do sol",
+    "tablist_label": "Capturas de tela do Zen Bubbles",
+    "tab1": "Início",
+    "tab2": "Jornada",
+    "tab3": "Partida",
+    "tab4": "Loja"
+  },
+  "cap": {
+    "icon_alt": "Ícone do app Cap Kickers",
+    "kicker": "Esportes · Arcade",
+    "sub": "Futebol de tampinha no dedo",
+    "pitch": "O futebol de mesa que a gente jogava na escola — o bom e velho <i>futebol de tampinha</i> — agora no seu bolso. Não mire, dê o peteleco: quanto mais forte, mais longe a tampinha vai.",
+    "f1": "<b>Cinco toques por vez</b> — passe a tampinha pelo vão entre as outras duas para manter a posse e chute no quinto toque.",
+    "f2": "<b>Solo contra a IA</b> — vença cada rival no caminho da campanha, do Novato em diante.",
+    "f3": "<b>2 jogadores e Treino</b> — passe o celular para um amigo ou aqueça sem pressão.",
+    "f4": "<b>Estante de troféus</b> — ganhe Tampinhas jogando e desbloqueie campos e estilos de tampinha.",
+    "tags_label": "Sobre o Cap Kickers",
+    "aka": "No Brasil ele se chama <b>Futebol de Tampinha</b>; na América Latina de língua espanhola, <b lang=\"es\">Fútbol de Tapitas</b>.",
+    "shot1": "Tela inicial do Cap Kickers: Solo contra a IA, 2 jogadores e Treino",
+    "shot2": "Partida em andamento: três tampinhas azuis no gramado, toque 1 de 5",
+    "shot3": "Campanha Solo contra a IA com recompensas e um baú misterioso",
+    "shot4": "Estante de troféus com campos para desbloquear: mesa, cimento, noite, rua e praia",
+    "shot5": "Como jogar: conheça seu time de três tampinhas",
+    "tablist_label": "Capturas de tela do Cap Kickers",
+    "tab1": "Início",
+    "tab2": "Partida",
+    "tab3": "Campanha",
+    "tab4": "Troféus",
+    "tab5": "Como jogar"
+  },
+  "flick": {
+    "title": "Dê um peteleco",
+    "hint": "Deslize a tampinha azul em direção ao gol. Quanto mais rápido, mais longe.",
+    "goals": "gols",
+    "shots": "chutes",
+    "canvas_label": "Mini campo do Cap Kickers. Deslize a tampinha azul para chutar ao gol."
+  },
+  "studio": {
+    "eyebrow": "O estúdio",
+    "h2": "Um estúdio pequeno com uma regra simples: respeitar o tempo de quem joga.",
+    "p1": "A <b>Sole Via Entertainment LLC</b> é um estúdio independente em Bay Harbor Islands, Miami. Criamos, desenvolvemos e publicamos nossos próprios jogos — do primeiro rascunho à página na loja — e os mantemos pequenos de propósito: fáceis de aprender, rápidos de jogar e gostosos de voltar.",
+    "p2": "Nossos jogos são gratuitos e mantidos por anúncios. Isso também é um ofício, e levamos a sério: os anúncios ficam em volta da partida, nunca por cima dela, e nada do que você precisa para aproveitar o jogo fica bloqueado por eles.",
+    "pr1_t": "Sem conta",
+    "pr1_d": "Sem cadastro, sem e-mail. Seus recordes e configurações ficam no seu aparelho.",
+    "pr2_t": "Funciona offline",
+    "pr2_d": "No avião, na fila, no metrô — os jogos funcionam sem conexão.",
+    "pr3_t": "Três idiomas",
+    "pr3_d": "Português, inglês e espanhol, no jogo e na loja.",
+    "pr4_t": "Privacidade por padrão",
+    "pr4_d": "Estatísticas de uso anônimas que você pode desligar nas Configurações, e o aviso de rastreamento da Apple respeitado."
+  },
+  "support": {
+    "eyebrow": "Fale com a gente",
+    "h2": "Lemos todas as mensagens.",
+    "player_label": "Suporte ao jogador",
+    "player_desc": "Bugs, dúvidas e sugestões sobre os jogos.",
+    "biz_label": "Negócios e imprensa",
+    "biz_desc": "Parcerias, publicidade, imprensa e assuntos jurídicos.",
+    "policies_title": "Políticas dos jogos",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "support": "Suporte",
+    "zen_policies_label": "Políticas do Zen Bubbles",
+    "cap_policies_label": "Políticas do Cap Kickers",
+    "legal_note_block": "<p class=\"legal-note\">As políticas estão disponíveis em inglês.</p>"
+  },
+  "footer": {
+    "top_label": "Voltar ao topo",
+    "label": "Rodapé",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "contact": "Contato"
+  },
+  "js": {
+    "pop_bubble": "Estourar bolha",
+    "popped_bubble": "Bolha estourada",
+    "m1": "Isso aí.",
+    "m5": "Estranhamente satisfatório, né?",
+    "m15": "Metade da folha já foi.",
+    "m45": "Você ia curtir o Zen Bubbles.",
+    "m100": "Tá bom, você curte muito o Zen Bubbles.",
+    "cleared": "Folha zerada — aqui vai outra.",
+    "sound_on": "Som ligado",
+    "sound_off": "Som desligado",
+    "flick_nice": "Boa! Agora passe pelo goleiro — ele não para de se mexer.",
+    "goal": "GOL!"
+  }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="{{html_lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<link rel="canonical" href="{{canonical}}">
+<link rel="alternate" hreflang="en" href="https://solevia.app/">
+<link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/">
+<link rel="alternate" hreflang="es-419" href="https://solevia.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://solevia.app/">
+<meta name="theme-color" content="#F4F7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B181D" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sole Via Entertainment">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:title" content="{{og.title}}">
+<meta property="og:description" content="{{og.description}}">
+<meta property="og:image" content="https://solevia.app/{{og_image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://solevia.app/{{og_image}}">
+
+<link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+
+<!-- Language: the site root follows the visitor's saved choice, else the browser language, else English. -->
+<script>
+(function () {
+  var page = "{{lang}}", isRoot = {{is_root}}, urls = {{lang_urls}};
+  var saved = null;
+  try { saved = localStorage.getItem("sv-lang"); } catch (e) {}
+  function detect() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i] || "").toLowerCase();
+      if (l.indexOf("pt") === 0) return "pt";
+      if (l.indexOf("es") === 0) return "es";
+      if (l.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+  var want = (saved && urls[saved]) ? saved : detect();
+  if (isRoot && want !== page) location.replace(urls[want] + location.hash);
+})();
+</script>
+
+<link rel="preload" href="{{root}}assets/fonts/young-serif-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="{{root}}assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://solevia.app/#org",
+      "name": "Sole Via Entertainment LLC",
+      "alternateName": ["Sole Via Entertainment", "Solevia"],
+      "url": "https://solevia.app/",
+      "logo": "https://solevia.app/assets/brand/sole-via-mark-1024.png",
+      "email": "contact@solevia.app",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bay Harbor Islands", "addressRegion": "FL", "addressCountry": "US" }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Zen Bubbles: Pop & Relax",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6797921737", "https://play.google.com/store/apps/details?id=app.solevia.zenbubbles"]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Cap Kickers",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6805625628", "https://play.google.com/store/apps/details?id=app.solevia.capkickers"]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="sv-strings">{{js_strings}}</script>
+</head>
+<body>
+<a class="skip" href="#main">{{a11y.skip}}</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="{{brand.home_label}}">
+      <img class="brand-mark" src="{{root}}assets/brand/sole-via-mark.svg" alt="" width="44" height="44">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <nav class="nav" aria-label="{{nav.label}}">
+      <a href="#games">{{nav.games}}</a>
+      <a href="#studio">{{nav.studio}}</a>
+      <a href="#support">{{nav.support}}</a>
+    </nav>
+    <nav class="lang-switch" aria-label="{{nav.lang_label}}">
+{{lang_links}}
+    </nav>
+    <a class="btn btn-sun btn-sm header-cta" href="#games">{{nav.cta}}</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{{hero.eyebrow}}</p>
+        <h1 class="display">{{hero.h1}}</h1>
+        <p class="lede">{{hero.lede}}</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#games">{{hero.cta1}}</a>
+          <a class="btn btn-ghost" href="#contact">{{hero.cta2}}</a>
+        </div>
+        <ul class="hero-facts" aria-label="{{hero.facts_label}}">
+          <li>{{hero.fact1}}</li>
+          <li><strong>iOS</strong> &amp; <strong>Android</strong></li>
+          <li><strong>EN · PT · ES</strong></li>
+        </ul>
+      </div>
+
+      <div class="hero-play">
+        <div class="sheet-stage">
+          <div class="sheet" id="wrap-sheet" role="group" aria-label="{{hero.sheet_label}}">
+            <!-- bubbles are built by assets/js/site.js -->
+          </div>
+          <a class="stray-cap" href="#cap-kickers" aria-label="{{hero.cap_label}}">
+            <img src="{{root}}assets/img/fx/cap-crown-red.webp" alt="" width="128" height="128">
+          </a>
+        </div>
+        <div class="sheet-hud">
+          <p class="sheet-hint"><span class="mono" id="pop-count">0</span> {{hero.popped}} · <span id="pop-msg">{{hero.msg0}}</span></p>
+          <button class="chip-btn" type="button" id="sound-toggle" aria-pressed="true">{{js.sound_on}}</button>
+        </div>
+        <p class="sheet-note">{{hero.note}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section class="games" id="games" aria-labelledby="games-title">
+    <div class="wrap section-head">
+      <p class="eyebrow">{{games.eyebrow}}</p>
+      <h2 class="display h2" id="games-title">{{games.h2}}</h2>
+      <p class="section-lede">{{games.lede}}</p>
+    </div>
+
+    <!-- Zen Bubbles -->
+    <article class="game game-zen" id="zen-bubbles" aria-labelledby="zen-title">
+      <div class="wrap game-grid">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="{{root}}assets/img/zen/icon.webp" alt="{{zen.icon_alt}}" width="96" height="96">
+            <div>
+              <p class="game-kicker">{{zen.kicker}}</p>
+              <h3 class="game-name" id="zen-title">Zen Bubbles</h3>
+              <p class="game-sub">{{zen.sub}}</p>
+            </div>
+          </div>
+          <p class="game-pitch">{{zen.pitch}}</p>
+          <ul class="features">
+            <li>{{zen.f1}}</li>
+            <li>{{zen.f2}}</li>
+            <li>{{zen.f3}}</li>
+            <li>{{zen.f4}}</li>
+          </ul>
+          <ul class="tags" aria-label="{{zen.tags_label}}">
+            <li>{{tags.free}}</li><li>{{tags.offline}}</li><li>{{tags.rated}}</li><li>EN · PT · ES</li>
+          </ul>
+{{zen.aka_block}}
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6797921737" target="_blank" rel="noopener">
+              <img src="{{root}}assets/badges/app-store-{{lang}}.svg" alt="{{stores.apple_alt}}" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.zenbubbles{{play_hl}}" target="_blank" rel="noopener">
+              <img src="{{root}}assets/badges/google-play-{{lang}}.svg" alt="{{stores.google_alt}}" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="3800">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 390 / 844">
+              <img class="shot is-active" src="{{root}}assets/img/zen/01-home.webp" alt="{{zen.shot1}}" width="640" height="1385">
+              <img class="shot" src="{{root}}assets/img/zen/02-journey.webp" alt="{{zen.shot2}}" width="640" height="1385" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/zen/03-gameplay.webp" alt="{{zen.shot3}}" width="640" height="1385" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/zen/04-shop.webp" alt="{{zen.shot4}}" width="640" height="1385" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="{{zen.tablist_label}}">
+            <button role="tab" type="button" aria-selected="true">{{zen.tab1}}</button>
+            <button role="tab" type="button" aria-selected="false">{{zen.tab2}}</button>
+            <button role="tab" type="button" aria-selected="false">{{zen.tab3}}</button>
+            <button role="tab" type="button" aria-selected="false">{{zen.tab4}}</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cap Kickers -->
+    <article class="game game-cap" id="cap-kickers" aria-labelledby="cap-title">
+      <div class="wrap game-grid game-grid-flip">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="{{root}}assets/img/cap/icon.webp" alt="{{cap.icon_alt}}" width="96" height="96">
+            <div>
+              <p class="game-kicker">{{cap.kicker}}</p>
+              <h3 class="game-name" id="cap-title">Cap Kickers</h3>
+              <p class="game-sub">{{cap.sub}}</p>
+            </div>
+          </div>
+          <p class="game-pitch">{{cap.pitch}}</p>
+          <ul class="features">
+            <li>{{cap.f1}}</li>
+            <li>{{cap.f2}}</li>
+            <li>{{cap.f3}}</li>
+            <li>{{cap.f4}}</li>
+          </ul>
+          <ul class="tags" aria-label="{{cap.tags_label}}">
+            <li>{{tags.free}}</li><li>{{tags.offline}}</li><li>{{tags.rated}}</li><li>EN · PT · ES</li>
+          </ul>
+          <p class="aka">{{cap.aka}}</p>
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6805625628" target="_blank" rel="noopener">
+              <img src="{{root}}assets/badges/app-store-{{lang}}.svg" alt="{{stores.apple_alt}}" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.capkickers{{play_hl}}" target="_blank" rel="noopener">
+              <img src="{{root}}assets/badges/google-play-{{lang}}.svg" alt="{{stores.google_alt}}" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="4200">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 1080 / 1920">
+              <img class="shot is-active" src="{{root}}assets/img/cap/01-home.webp" alt="{{cap.shot1}}" width="640" height="1138" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/cap/02-gameplay.webp" alt="{{cap.shot2}}" width="640" height="1138" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/cap/03-reward-road.webp" alt="{{cap.shot3}}" width="640" height="1138" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/cap/05-cabinet.webp" alt="{{cap.shot4}}" width="640" height="1138" loading="lazy">
+              <img class="shot" src="{{root}}assets/img/cap/06-how-to-play.webp" alt="{{cap.shot5}}" width="640" height="1138" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="{{cap.tablist_label}}">
+            <button role="tab" type="button" aria-selected="true">{{cap.tab1}}</button>
+            <button role="tab" type="button" aria-selected="false">{{cap.tab2}}</button>
+            <button role="tab" type="button" aria-selected="false">{{cap.tab3}}</button>
+            <button role="tab" type="button" aria-selected="false">{{cap.tab4}}</button>
+            <button role="tab" type="button" aria-selected="false">{{cap.tab5}}</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="flick" id="flick">
+          <div class="flick-head">
+            <div>
+              <p class="flick-title">{{flick.title}}</p>
+              <p class="flick-hint" id="flick-hint">{{flick.hint}}</p>
+            </div>
+            <p class="flick-score mono" aria-live="polite"><span id="flick-goals">0</span> {{flick.goals}} · <span id="flick-shots">0</span> {{flick.shots}}</p>
+          </div>
+          <canvas id="flick-canvas" aria-label="{{flick.canvas_label}}" role="img"></canvas>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="wrap studio-grid">
+      <div>
+        <p class="eyebrow">{{studio.eyebrow}}</p>
+        <h2 class="display h2" id="studio-title">{{studio.h2}}</h2>
+      </div>
+      <div class="studio-copy">
+        <p>{{studio.p1}}</p>
+        <p>{{studio.p2}}</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <dl class="principles">
+        <div>
+          <dt>{{studio.pr1_t}}</dt>
+          <dd>{{studio.pr1_d}}</dd>
+        </div>
+        <div>
+          <dt>{{studio.pr2_t}}</dt>
+          <dd>{{studio.pr2_d}}</dd>
+        </div>
+        <div>
+          <dt>{{studio.pr3_t}}</dt>
+          <dd>{{studio.pr3_d}}</dd>
+        </div>
+        <div>
+          <dt>{{studio.pr4_t}}</dt>
+          <dd>{{studio.pr4_d}}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT / CONTACT ============ -->
+  <section class="support" id="support" aria-labelledby="support-title">
+    <div class="wrap support-grid">
+      <div class="contact" id="contact">
+        <p class="eyebrow">{{support.eyebrow}}</p>
+        <h2 class="display h2" id="support-title">{{support.h2}}</h2>
+        <div class="mail-list">
+          <a class="mail" href="mailto:support@solevia.app">
+            <span class="mail-label">{{support.player_label}}</span>
+            <span class="mail-addr">support@solevia.app</span>
+            <span class="mail-desc">{{support.player_desc}}</span>
+          </a>
+          <a class="mail" href="mailto:contact@solevia.app">
+            <span class="mail-label">{{support.biz_label}}</span>
+            <span class="mail-addr">contact@solevia.app</span>
+            <span class="mail-desc">{{support.biz_desc}}</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="legal-card">
+        <h3 class="legal-title">{{support.policies_title}}</h3>
+        <div class="legal-rows">
+          <div class="legal-row">
+            <img src="{{root}}assets/img/zen/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Zen Bubbles</span>
+            <nav class="legal-links" aria-label="{{support.zen_policies_label}}">
+              <a href="{{legal}}privacy/pop-zen/" hreflang="en">{{support.privacy}}</a>
+              <a href="{{legal}}terms/pop-zen/" hreflang="en">{{support.terms}}</a>
+              <a href="{{legal}}about/pop-zen/" hreflang="en">{{support.support}}</a>
+            </nav>
+          </div>
+          <div class="legal-row">
+            <img src="{{root}}assets/img/cap/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Cap Kickers</span>
+            <nav class="legal-links" aria-label="{{support.cap_policies_label}}">
+              <a href="{{legal}}privacy/cap-kickers/" hreflang="en">{{support.privacy}}</a>
+              <a href="{{legal}}terms/cap-kickers/" hreflang="en">{{support.terms}}</a>
+              <a href="mailto:support@solevia.app?subject=Cap%20Kickers%20support">{{support.support}}</a>
+            </nav>
+          </div>
+        </div>
+{{support.legal_note_block}}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="brand brand-sm" href="#top" aria-label="{{footer.top_label}}">
+      <img class="brand-mark" src="{{root}}assets/brand/sole-via-mark.svg" alt="" width="34" height="34">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <p class="footer-legal">© <span id="year">2026</span> Sole Via Entertainment LLC · Bay Harbor Islands, Florida</p>
+    <nav class="footer-links" aria-label="{{footer.label}}">
+      <a href="{{legal}}privacy/" hreflang="en">{{footer.privacy}}</a>
+      <a href="{{legal}}terms/" hreflang="en">{{footer.terms}}</a>
+      <a href="mailto:contact@solevia.app">{{footer.contact}}</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="{{root}}assets/js/site.js" defer></script>
+</body>
+</html>

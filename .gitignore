@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# local scratch (safe to delete)
+_to_delete/

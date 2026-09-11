@@ -1,68 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Solevia — Entertainment Apps</title>
-<meta name="description" content="Solevia is building entertainment apps. Something fun is on the way." />
-<meta property="og:title" content="Solevia" />
-<meta property="og:description" content="We're building entertainment apps. Something fun is on the way." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://solevia.app" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
-<style>
-  :root { --bg1:#0b0721; --bg2:#160b3a; --accent:#8b5cf6; --accent2:#ec4899; --text:#f5f3ff; --muted:#a5a0c9; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { height:100%; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--text);
-    background: radial-gradient(1200px 800px at 20% 10%, #1e1150 0%, transparent 60%),
-                radial-gradient(1000px 700px at 85% 90%, #3a0f4a 0%, transparent 55%),
-                linear-gradient(160deg, var(--bg1), var(--bg2));
-    min-height:100%;
-    display:flex; align-items:center; justify-content:center;
-    overflow:hidden; position:relative; text-align:center; padding:24px;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sole Via Entertainment — Mobile game studio · Zen Bubbles & Cap Kickers</title>
+<meta name="description" content="Sole Via Entertainment is an independent mobile game studio in Miami making Zen Bubbles and Cap Kickers — small, tactile games for iPhone and Android. Free, offline, no sign-up.">
+<link rel="canonical" href="https://solevia.app/">
+<link rel="alternate" hreflang="en" href="https://solevia.app/">
+<link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/">
+<link rel="alternate" hreflang="es-419" href="https://solevia.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://solevia.app/">
+<meta name="theme-color" content="#F4F7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B181D" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sole Via Entertainment">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://solevia.app/">
+<meta property="og:title" content="Sole Via Entertainment — Small games you can feel">
+<meta property="og:description" content="Independent mobile game studio in Miami. Makers of Zen Bubbles and Cap Kickers for iPhone and Android.">
+<meta property="og:image" content="https://solevia.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://solevia.app/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Language: the site root follows the visitor's saved choice, else the browser language, else English. -->
+<script>
+(function () {
+  var page = "en", isRoot = true, urls = {"en": "./", "pt": "pt/", "es": "es/"};
+  var saved = null;
+  try { saved = localStorage.getItem("sv-lang"); } catch (e) {}
+  function detect() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i] || "").toLowerCase();
+      if (l.indexOf("pt") === 0) return "pt";
+      if (l.indexOf("es") === 0) return "es";
+      if (l.indexOf("en") === 0) return "en";
+    }
+    return "en";
   }
-  .orb { position:absolute; border-radius:50%; filter:blur(60px); opacity:.5; animation:float 14s ease-in-out infinite; }
-  .orb.a { width:340px; height:340px; background:var(--accent); top:-80px; left:-60px; }
-  .orb.b { width:300px; height:300px; background:var(--accent2); bottom:-90px; right:-70px; animation-delay:-6s; }
-  @keyframes float { 0%,100%{transform:translateY(0) translateX(0);} 50%{transform:translateY(-28px) translateX(18px);} }
-  .card { position:relative; z-index:2; max-width:680px; }
-  .badge {
-    display:inline-block; font-size:.78rem; letter-spacing:.18em; text-transform:uppercase;
-    color:var(--muted); border:1px solid rgba(165,160,201,.28); border-radius:999px;
-    padding:7px 16px; margin-bottom:28px; backdrop-filter:blur(6px);
-  }
-  .logo {
-    font-size: clamp(3rem, 12vw, 6.5rem); font-weight:800; letter-spacing:-.03em; line-height:1;
-    background: linear-gradient(90deg, #c4b5fd, #f9a8d4, #c4b5fd);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-    background-size:200% auto; animation:shine 6s linear infinite;
-  }
-  @keyframes shine { to { background-position:200% center; } }
-  .tagline { margin-top:22px; font-size: clamp(1.05rem, 3.4vw, 1.5rem); font-weight:500; color:var(--text); }
-  .sub { margin-top:14px; font-size: clamp(.95rem, 2.6vw, 1.05rem); color:var(--muted); line-height:1.6; }
-  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#34d399; margin-right:8px; vertical-align:middle; box-shadow:0 0 0 0 rgba(52,211,153,.6); animation:pulse 2s infinite; }
-  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(52,211,153,.55);} 70%{box-shadow:0 0 0 10px rgba(52,211,153,0);} 100%{box-shadow:0 0 0 0 rgba(52,211,153,0);} }
-  footer { position:absolute; bottom:22px; left:0; right:0; z-index:2; font-size:.82rem; color:var(--muted); }
-  footer .links { margin-bottom:9px; }
-  footer .links a { color:var(--muted); text-decoration:none; margin:0 7px; transition:color .15s; }
-  footer .links a:hover { color:var(--accent); }
-</style>
+  var want = (saved && urls[saved]) ? saved : detect();
+  if (isRoot && want !== page) location.replace(urls[want] + location.hash);
+})();
+</script>
+
+<link rel="preload" href="assets/fonts/young-serif-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://solevia.app/#org",
+      "name": "Sole Via Entertainment LLC",
+      "alternateName": ["Sole Via Entertainment", "Solevia"],
+      "url": "https://solevia.app/",
+      "logo": "https://solevia.app/assets/brand/sole-via-mark-1024.png",
+      "email": "contact@solevia.app",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bay Harbor Islands", "addressRegion": "FL", "addressCountry": "US" }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Zen Bubbles: Pop & Relax",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6797921737", "https://play.google.com/store/apps/details?id=app.solevia.zenbubbles"]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Cap Kickers",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6805625628", "https://play.google.com/store/apps/details?id=app.solevia.capkickers"]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="sv-strings">{"pop_bubble": "Pop bubble", "popped_bubble": "Popped bubble", "m1": "There it is.", "m5": "Oddly satisfying, right?", "m15": "Halfway through the sheet.", "m45": "You would like Zen Bubbles.", "m100": "Okay, you really like Zen Bubbles.", "cleared": "Sheet cleared — here’s a fresh one.", "sound_on": "Sound on", "sound_off": "Sound off", "flick_nice": "Nice. Now beat the keeper — he never stops moving.", "goal": "GOAL!"}</script>
 </head>
 <body>
-  <div class="orb a"></div>
-  <div class="orb b"></div>
-  <main class="card">
-    <span class="badge">Coming soon</span>
-    <h1 class="logo">Solevia</h1>
-    <p class="tagline">We're building entertainment apps.</p>
-    <p class="sub">A new studio crafting playful, delightful mobile experiences.<br />Something fun is on the way — check back soon.</p>
-  </main>
-  <footer>
-    <div class="links"><a href="/privacy/pop-zen">Privacy</a>·<a href="/terms/pop-zen">Terms</a>·<a href="/about/pop-zen">About</a></div>
-    <span class="dot"></span>© 2026 Solevia · solevia.app
-  </footer>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Sole Via Entertainment — back to top">
+      <img class="brand-mark" src="assets/brand/sole-via-mark.svg" alt="" width="44" height="44">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#games">Games</a>
+      <a href="#studio">Studio</a>
+      <a href="#support">Support</a>
+    </nav>
+    <nav class="lang-switch" aria-label="Language">
+      <a href="./" hreflang="en" lang="en" data-lang="en" title="English" aria-current="true"><abbr title="English">EN</abbr></a>
+      <a href="pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt" title="Português"><abbr title="Português">PT</abbr></a>
+      <a href="es/" hreflang="es-419" lang="es-419" data-lang="es" title="Español"><abbr title="Español">ES</abbr></a>
+    </nav>
+    <a class="btn btn-sun btn-sm header-cta" href="#games">Get the games</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent mobile game studio · Miami, Florida</p>
+        <h1 class="display">Small games you can&nbsp;<em>feel</em>.</h1>
+        <p class="lede">We turn familiar, hands-on things — a sheet of bubble wrap, a bottle cap on a tabletop — into quick, calm games for iPhone and Android. Free to play, offline, no sign-up.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#games">Meet our games</a>
+          <a class="btn btn-ghost" href="#contact">Work with us</a>
+        </div>
+        <ul class="hero-facts" aria-label="Studio at a glance">
+          <li><strong>2</strong> games live</li>
+          <li><strong>iOS</strong> &amp; <strong>Android</strong></li>
+          <li><strong>EN · PT · ES</strong></li>
+        </ul>
+      </div>
+
+      <div class="hero-play">
+        <div class="sheet-stage">
+          <div class="sheet" id="wrap-sheet" role="group" aria-label="Poppable bubble wrap. Press a bubble to pop it.">
+            <!-- bubbles are built by assets/js/site.js -->
+          </div>
+          <a class="stray-cap" href="#cap-kickers" aria-label="Jump to Cap Kickers">
+            <img src="assets/img/fx/cap-crown-red.webp" alt="" width="128" height="128">
+          </a>
+        </div>
+        <div class="sheet-hud">
+          <p class="sheet-hint"><span class="mono" id="pop-count">0</span> popped · <span id="pop-msg">Go on — pop one.</span></p>
+          <button class="chip-btn" type="button" id="sound-toggle" aria-pressed="true">Sound on</button>
+        </div>
+        <p class="sheet-note">Real bubbles and pop sounds from <a href="#zen-bubbles">Zen Bubbles</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section class="games" id="games" aria-labelledby="games-title">
+    <div class="wrap section-head">
+      <p class="eyebrow">Our games</p>
+      <h2 class="display h2" id="games-title">Two games. One finger each.</h2>
+      <p class="section-lede">Both are free on the App Store and Google Play, play fully offline, and speak English, Portuguese and Spanish.</p>
+    </div>
+
+    <!-- Zen Bubbles -->
+    <article class="game game-zen" id="zen-bubbles" aria-labelledby="zen-title">
+      <div class="wrap game-grid">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="assets/img/zen/icon.webp" alt="Zen Bubbles app icon" width="96" height="96">
+            <div>
+              <p class="game-kicker">Casual · Relaxation</p>
+              <h3 class="game-name" id="zen-title">Zen Bubbles</h3>
+              <p class="game-sub">Pop &amp; Relax</p>
+            </div>
+          </div>
+          <p class="game-pitch">The oddly satisfying pop of real bubble wrap, on a calm island journey. Clear a phase, watch the little bubble hop to the next one, and try to beat your best time.</p>
+          <ul class="features">
+            <li><b>Four island worlds</b> — bubbles go off-grid, start drifting, then hide behind sliding shields.</li>
+            <li><b>Pop Challenge</b> — a surprise mission with a surprise reward drops in every few hours.</li>
+            <li><b>Gear up</b> — bombs, snowflakes and collectible bubble skins from the Shop.</li>
+            <li><b>Soft pops &amp; haptics</b> — calm music, and a light tap on every pop.</li>
+          </ul>
+          <ul class="tags" aria-label="Zen Bubbles facts">
+            <li>Free</li><li>Plays offline</li><li>Rated 4+ / Everyone</li><li>EN · PT · ES</li>
+          </ul>
+
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6797921737" target="_blank" rel="noopener">
+              <img src="assets/badges/app-store-en.svg" alt="Download on the App Store" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.zenbubbles" target="_blank" rel="noopener">
+              <img src="assets/badges/google-play-en.svg" alt="Get it on Google Play" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="3800">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 390 / 844">
+              <img class="shot is-active" src="assets/img/zen/01-home.webp" alt="Zen Bubbles home screen: the smiling bubble mascot on a bubble-wrap island at sunset" width="640" height="1385">
+              <img class="shot" src="assets/img/zen/02-journey.webp" alt="Your journey map with the World 1 and World 2 islands" width="640" height="1385" loading="lazy">
+              <img class="shot" src="assets/img/zen/03-gameplay.webp" alt="Gameplay: medium bubbles on a bubble-wrap board with a bomb and a snowflake power-up" width="640" height="1385" loading="lazy">
+              <img class="shot" src="assets/img/zen/04-shop.webp" alt="Shop with bomb and time-freeze power-ups and Neon, Ocean and Sunset bubble skins" width="640" height="1385" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="Zen Bubbles screenshots">
+            <button role="tab" type="button" aria-selected="true">Home</button>
+            <button role="tab" type="button" aria-selected="false">Journey</button>
+            <button role="tab" type="button" aria-selected="false">Gameplay</button>
+            <button role="tab" type="button" aria-selected="false">Shop</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cap Kickers -->
+    <article class="game game-cap" id="cap-kickers" aria-labelledby="cap-title">
+      <div class="wrap game-grid game-grid-flip">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="assets/img/cap/icon.webp" alt="Cap Kickers app icon" width="96" height="96">
+            <div>
+              <p class="game-kicker">Sports · Arcade</p>
+              <h3 class="game-name" id="cap-title">Cap Kickers</h3>
+              <p class="game-sub">Bottle-cap finger soccer</p>
+            </div>
+          </div>
+          <p class="game-pitch">The tabletop game half of Latin America grew up playing at school — <i lang="pt">futebol de tampinha</i> — now in your pocket. Flick, don't aim: the harder the flick, the farther the cap flies.</p>
+          <ul class="features">
+            <li><b>Five touches a turn</b> — thread a cap through the gap to keep possession, then shoot on the fifth.</li>
+            <li><b>Solo vs AI</b> — beat each rival on the campaign road, from Rookie upward.</li>
+            <li><b>2 Players &amp; Practice</b> — pass-and-play on one phone, or warm up with no pressure.</li>
+            <li><b>Trophy Cabinet</b> — earn Caps by playing and unlock pitches and cap styles.</li>
+          </ul>
+          <ul class="tags" aria-label="Cap Kickers facts">
+            <li>Free</li><li>Plays offline</li><li>Rated 4+ / Everyone</li><li>EN · PT · ES</li>
+          </ul>
+          <p class="aka">Known as <b lang="pt-BR">Futebol de Tampinha</b> in Brazil and <b lang="es">Fútbol de Tapitas</b> across Spanish-speaking Latin America.</p>
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6805625628" target="_blank" rel="noopener">
+              <img src="assets/badges/app-store-en.svg" alt="Download on the App Store" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.capkickers" target="_blank" rel="noopener">
+              <img src="assets/badges/google-play-en.svg" alt="Get it on Google Play" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="4200">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 1080 / 1920">
+              <img class="shot is-active" src="assets/img/cap/01-home.webp" alt="Cap Kickers home: Solo vs AI, 2 Players and Practice" width="640" height="1138" loading="lazy">
+              <img class="shot" src="assets/img/cap/02-gameplay.webp" alt="Match in progress: three blue caps on a grass pitch, touch 1 of 5" width="640" height="1138" loading="lazy">
+              <img class="shot" src="assets/img/cap/03-reward-road.webp" alt="Solo vs AI campaign road with rewards and a mystery chest" width="640" height="1138" loading="lazy">
+              <img class="shot" src="assets/img/cap/05-cabinet.webp" alt="Trophy Cabinet with unlockable pitches: table, cement, night, street, beach" width="640" height="1138" loading="lazy">
+              <img class="shot" src="assets/img/cap/06-how-to-play.webp" alt="How to play: meet your team of three bottle caps" width="640" height="1138" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="Cap Kickers screenshots">
+            <button role="tab" type="button" aria-selected="true">Home</button>
+            <button role="tab" type="button" aria-selected="false">Match</button>
+            <button role="tab" type="button" aria-selected="false">Campaign</button>
+            <button role="tab" type="button" aria-selected="false">Cabinet</button>
+            <button role="tab" type="button" aria-selected="false">How to play</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="flick" id="flick">
+          <div class="flick-head">
+            <div>
+              <p class="flick-title">Try a flick</p>
+              <p class="flick-hint" id="flick-hint">Swipe the blue cap toward the goal. Faster swipe, longer shot.</p>
+            </div>
+            <p class="flick-score mono" aria-live="polite"><span id="flick-goals">0</span> goals · <span id="flick-shots">0</span> shots</p>
+          </div>
+          <canvas id="flick-canvas" aria-label="Mini Cap Kickers pitch. Swipe the blue cap to shoot at the goal." role="img"></canvas>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="wrap studio-grid">
+      <div>
+        <p class="eyebrow">The studio</p>
+        <h2 class="display h2" id="studio-title">A small studio with a simple rule: respect the player’s time.</h2>
+      </div>
+      <div class="studio-copy">
+        <p><b>Sole Via Entertainment LLC</b> is an independent studio based in Bay Harbor Islands, Miami. We design, build and publish our own games — from the first sketch to the store listing — and we keep them small on purpose: easy to learn, quick to play, satisfying to come back to.</p>
+        <p>Our games are free and supported by ads. That is a craft of its own, and we take it seriously: ads sit around the play, never on top of it, and nothing you need to enjoy the game is locked behind them.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <dl class="principles">
+        <div>
+          <dt>No accounts</dt>
+          <dd>No sign-up, no email. Your records and settings stay on your device.</dd>
+        </div>
+        <div>
+          <dt>Plays offline</dt>
+          <dd>On a plane, in a queue, underground — the games work without a connection.</dd>
+        </div>
+        <div>
+          <dt>Three languages</dt>
+          <dd>English, Portuguese and Spanish, in the game and on the store.</dd>
+        </div>
+        <div>
+          <dt>Privacy by default</dt>
+          <dd>Anonymous usage stats you can switch off in Settings, and Apple’s tracking prompt honored.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT / CONTACT ============ -->
+  <section class="support" id="support" aria-labelledby="support-title">
+    <div class="wrap support-grid">
+      <div class="contact" id="contact">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="display h2" id="support-title">We read every message.</h2>
+        <div class="mail-list">
+          <a class="mail" href="mailto:support@solevia.app">
+            <span class="mail-label">Player support</span>
+            <span class="mail-addr">support@solevia.app</span>
+            <span class="mail-desc">Bugs, questions, feedback about a game.</span>
+          </a>
+          <a class="mail" href="mailto:contact@solevia.app">
+            <span class="mail-label">Business &amp; press</span>
+            <span class="mail-addr">contact@solevia.app</span>
+            <span class="mail-desc">Partnerships, advertising, press and legal.</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="legal-card">
+        <h3 class="legal-title">Game policies</h3>
+        <div class="legal-rows">
+          <div class="legal-row">
+            <img src="assets/img/zen/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Zen Bubbles</span>
+            <nav class="legal-links" aria-label="Zen Bubbles policies">
+              <a href="privacy/pop-zen/" hreflang="en">Privacy</a>
+              <a href="terms/pop-zen/" hreflang="en">Terms</a>
+              <a href="about/pop-zen/" hreflang="en">Support</a>
+            </nav>
+          </div>
+          <div class="legal-row">
+            <img src="assets/img/cap/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Cap Kickers</span>
+            <nav class="legal-links" aria-label="Cap Kickers policies">
+              <a href="privacy/cap-kickers/" hreflang="en">Privacy</a>
+              <a href="terms/cap-kickers/" hreflang="en">Terms</a>
+              <a href="mailto:support@solevia.app?subject=Cap%20Kickers%20support">Support</a>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="brand brand-sm" href="#top" aria-label="Back to top">
+      <img class="brand-mark" src="assets/brand/sole-via-mark.svg" alt="" width="34" height="34">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <p class="footer-legal">© <span id="year">2026</span> Sole Via Entertainment LLC · Bay Harbor Islands, Florida</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="privacy/" hreflang="en">Privacy</a>
+      <a href="terms/" hreflang="en">Terms</a>
+      <a href="mailto:contact@solevia.app">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Sole Via Entertainment — Estudio de juegos móviles · Zen Bubbles y Cap Kickers",
+    "description": "Sole Via Entertainment es un estudio independiente de juegos móviles en Miami, creador de Zen Bubbles y Cap Kickers: juegos pequeños y táctiles para iPhone y Android. Gratis, sin conexión y sin registro."
+  },
+  "og": {
+    "title": "Sole Via Entertainment — Juegos pequeños que se sienten",
+    "description": "Estudio independiente de juegos móviles en Miami. Creadores de Zen Bubbles y Cap Kickers para iPhone y Android."
+  },
+  "a11y": {
+    "skip": "Saltar al contenido"
+  },
+  "brand": {
+    "home_label": "Sole Via Entertainment — volver arriba"
+  },
+  "nav": {
+    "label": "Principal",
+    "games": "Juegos",
+    "studio": "Estudio",
+    "support": "Soporte",
+    "cta": "Descarga los juegos",
+    "lang_label": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Estudio independiente de juegos móviles · Miami, Florida",
+    "h1": "Juegos pequeños que se&nbsp;<em>sienten</em>.",
+    "lede": "Convertimos cosas cotidianas que dan ganas de tocar — una hoja de plástico de burbujas, una tapita sobre la mesa — en juegos rápidos y relajantes para iPhone y Android. Gratis, sin conexión y sin registro.",
+    "cta1": "Conoce nuestros juegos",
+    "cta2": "Trabaja con nosotros",
+    "facts_label": "El estudio en breve",
+    "fact1": "<strong>2</strong> juegos publicados",
+    "sheet_label": "Plástico de burbujas interactivo. Toca una burbuja para reventarla.",
+    "cap_label": "Ir a Cap Kickers",
+    "popped": "reventadas",
+    "msg0": "Anda, revienta una.",
+    "note": "Burbujas y sonidos reales de <a href=\"#zen-bubbles\">Zen Bubbles</a>."
+  },
+  "games": {
+    "eyebrow": "Nuestros juegos",
+    "h2": "Dos juegos. Un dedo cada uno.",
+    "lede": "Ambos son gratis en App Store y Google Play, funcionan sin conexión y hablan español, portugués e inglés."
+  },
+  "tags": {
+    "free": "Gratis",
+    "offline": "Sin conexión",
+    "rated": "Apto para todos (4+)"
+  },
+  "stores": {
+    "apple_alt": "Descárgalo en el App Store",
+    "google_alt": "Descargar en Google Play"
+  },
+  "zen": {
+    "icon_alt": "Ícono de la app Zen Bubbles",
+    "kicker": "Casual · Relajación",
+    "sub": "Revienta y relájate",
+    "pitch": "El extraño placer de reventar plástico de burbujas de verdad, en un tranquilo viaje entre islas. Supera una fase, mira cómo la burbujita salta a la siguiente e intenta batir tu mejor tiempo.",
+    "f1": "<b>Cuatro mundos-isla</b> — las burbujas se salen de la cuadrícula, empiezan a flotar y luego se esconden tras escudos deslizantes.",
+    "f2": "<b>Desafío Pop</b> — cada pocas horas llega una misión sorpresa con una recompensa sorpresa.",
+    "f3": "<b>Prepárate</b> — bombas, copos de nieve y estilos de burbuja coleccionables en la Tienda.",
+    "f4": "<b>Reventones suaves y vibración</b> — música tranquila y un toque ligero en cada burbuja.",
+    "tags_label": "Sobre Zen Bubbles",
+    "aka_block": "<p class=\"aka\">En celulares en español aparece como <b>Burbujas Zen</b>.</p>",
+    "shot1": "Pantalla de inicio de Zen Bubbles: la burbuja mascota sonriendo en una isla de plástico de burbujas al atardecer",
+    "shot2": "Mapa del viaje con las islas del Mundo 1 y el Mundo 2",
+    "shot3": "Partida: burbujas medianas sobre plástico de burbujas, con una bomba y un copo de nieve",
+    "shot4": "Tienda con bombas, congelar tiempo y los estilos de burbuja Neón, Océano y Atardecer",
+    "tablist_label": "Capturas de pantalla de Zen Bubbles",
+    "tab1": "Inicio",
+    "tab2": "Viaje",
+    "tab3": "Partida",
+    "tab4": "Tienda"
+  },
+  "cap": {
+    "icon_alt": "Ícono de la app Cap Kickers",
+    "kicker": "Deportes · Arcade",
+    "sub": "Fútbol de tapitas con el dedo",
+    "pitch": "El fútbol de mesa que media Latinoamérica jugó en la escuela — el clásico <i>fútbol de tapitas</i> — ahora en tu bolsillo. No apuntes: dale un toque. Mientras más fuerte, más lejos llega la tapita.",
+    "f1": "<b>Cinco toques por turno</b> — pasa una tapita por el hueco entre las otras dos para conservar la posesión y dispara en el quinto.",
+    "f2": "<b>Solo contra la IA</b> — vence a cada rival en el camino de la campaña, desde Novato en adelante.",
+    "f3": "<b>2 jugadores y Práctica</b> — pásale el teléfono a un amigo o calienta sin presión.",
+    "f4": "<b>Vitrina de trofeos</b> — gana Tapitas jugando y desbloquea canchas y estilos de tapita.",
+    "tags_label": "Sobre Cap Kickers",
+    "aka": "En Latinoamérica se llama <b>Fútbol de Tapitas</b>, y en Brasil, <b lang=\"pt-BR\">Futebol de Tampinha</b>.",
+    "shot1": "Inicio de Cap Kickers: Solo contra la IA, 2 jugadores y Práctica",
+    "shot2": "Partido en curso: tres tapitas azules en la cancha, toque 1 de 5",
+    "shot3": "Campaña Solo contra la IA con recompensas y un cofre misterioso",
+    "shot4": "Vitrina de trofeos con canchas desbloqueables: mesa, cemento, noche, calle y playa",
+    "shot5": "Cómo jugar: conoce a tu equipo de tres tapitas",
+    "tablist_label": "Capturas de pantalla de Cap Kickers",
+    "tab1": "Inicio",
+    "tab2": "Partido",
+    "tab3": "Campaña",
+    "tab4": "Trofeos",
+    "tab5": "Cómo jugar"
+  },
+  "flick": {
+    "title": "Dale un toque",
+    "hint": "Desliza la tapita azul hacia la portería. Más rápido, más lejos.",
+    "goals": "goles",
+    "shots": "tiros",
+    "canvas_label": "Mini cancha de Cap Kickers. Desliza la tapita azul para tirar a la portería."
+  },
+  "studio": {
+    "eyebrow": "El estudio",
+    "h2": "Un estudio pequeño con una regla simple: respetar el tiempo de quien juega.",
+    "p1": "<b>Sole Via Entertainment LLC</b> es un estudio independiente con sede en Bay Harbor Islands, Miami. Diseñamos, desarrollamos y publicamos nuestros propios juegos — desde el primer boceto hasta la ficha en la tienda — y los mantenemos pequeños a propósito: fáciles de aprender, rápidos de jugar y con ganas de volver.",
+    "p2": "Nuestros juegos son gratuitos y se sostienen con anuncios. Eso también es un oficio y nos lo tomamos en serio: los anuncios van alrededor del juego, nunca encima, y nada de lo que necesitas para disfrutarlo queda bloqueado detrás de ellos.",
+    "pr1_t": "Sin cuentas",
+    "pr1_d": "Sin registro ni correo. Tus récords y ajustes se quedan en tu dispositivo.",
+    "pr2_t": "Sin conexión",
+    "pr2_d": "En el avión, en la fila, en el metro: los juegos funcionan sin internet.",
+    "pr3_t": "Tres idiomas",
+    "pr3_d": "Español, portugués e inglés, en el juego y en la tienda.",
+    "pr4_t": "Privacidad por defecto",
+    "pr4_d": "Estadísticas de uso anónimas que puedes desactivar en Ajustes, y respeto total al aviso de rastreo de Apple."
+  },
+  "support": {
+    "eyebrow": "Escríbenos",
+    "h2": "Leemos cada mensaje.",
+    "player_label": "Soporte al jugador",
+    "player_desc": "Errores, preguntas y comentarios sobre los juegos.",
+    "biz_label": "Negocios y prensa",
+    "biz_desc": "Alianzas, publicidad, prensa y temas legales.",
+    "policies_title": "Políticas de los juegos",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "support": "Soporte",
+    "zen_policies_label": "Políticas de Zen Bubbles",
+    "cap_policies_label": "Políticas de Cap Kickers",
+    "legal_note_block": "<p class=\"legal-note\">Las políticas están disponibles en inglés.</p>"
+  },
+  "footer": {
+    "top_label": "Volver arriba",
+    "label": "Pie de página",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto"
+  },
+  "js": {
+    "pop_bubble": "Reventar burbuja",
+    "popped_bubble": "Burbuja reventada",
+    "m1": "Ahí está.",
+    "m5": "Extrañamente satisfactorio, ¿no?",
+    "m15": "Ya vas por la mitad.",
+    "m45": "Te encantaría Zen Bubbles.",
+    "m100": "Bueno, de verdad te encanta Zen Bubbles.",
+    "cleared": "Hoja terminada — aquí tienes otra.",
+    "sound_on": "Sonido activado",
+    "sound_off": "Sonido desactivado",
+    "flick_nice": "¡Bien! Ahora supera al portero: nunca deja de moverse.",
+    "goal": "¡GOL!"
+  }
+}

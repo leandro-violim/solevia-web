@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sole Via Entertainment — Estudio de juegos móviles · Zen Bubbles y Cap Kickers</title>
+<meta name="description" content="Sole Via Entertainment es un estudio independiente de juegos móviles en Miami, creador de Zen Bubbles y Cap Kickers: juegos pequeños y táctiles para iPhone y Android. Gratis, sin conexión y sin registro.">
+<link rel="canonical" href="https://solevia.app/es/">
+<link rel="alternate" hreflang="en" href="https://solevia.app/">
+<link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/">
+<link rel="alternate" hreflang="es-419" href="https://solevia.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://solevia.app/">
+<meta name="theme-color" content="#F4F7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B181D" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sole Via Entertainment">
+<meta property="og:locale" content="es_LA">
+<meta property="og:url" content="https://solevia.app/es/">
+<meta property="og:title" content="Sole Via Entertainment — Juegos pequeños que se sienten">
+<meta property="og:description" content="Estudio independiente de juegos móviles en Miami. Creadores de Zen Bubbles y Cap Kickers para iPhone y Android.">
+<meta property="og:image" content="https://solevia.app/og-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://solevia.app/og-es.png">
+
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Language: the site root follows the visitor's saved choice, else the browser language, else English. -->
+<script>
+(function () {
+  var page = "es", isRoot = false, urls = {"en": "../", "pt": "../pt/", "es": "../es/"};
+  var saved = null;
+  try { saved = localStorage.getItem("sv-lang"); } catch (e) {}
+  function detect() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i] || "").toLowerCase();
+      if (l.indexOf("pt") === 0) return "pt";
+      if (l.indexOf("es") === 0) return "es";
+      if (l.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+  var want = (saved && urls[saved]) ? saved : detect();
+  if (isRoot && want !== page) location.replace(urls[want] + location.hash);
+})();
+</script>
+
+<link rel="preload" href="../assets/fonts/young-serif-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://solevia.app/#org",
+      "name": "Sole Via Entertainment LLC",
+      "alternateName": ["Sole Via Entertainment", "Solevia"],
+      "url": "https://solevia.app/",
+      "logo": "https://solevia.app/assets/brand/sole-via-mark-1024.png",
+      "email": "contact@solevia.app",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bay Harbor Islands", "addressRegion": "FL", "addressCountry": "US" }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Zen Bubbles: Pop & Relax",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6797921737", "https://play.google.com/store/apps/details?id=app.solevia.zenbubbles"]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Cap Kickers",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://solevia.app/#org" },
+      "sameAs": ["https://apps.apple.com/app/id6805625628", "https://play.google.com/store/apps/details?id=app.solevia.capkickers"]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="sv-strings">{"pop_bubble": "Reventar burbuja", "popped_bubble": "Burbuja reventada", "m1": "Ahí está.", "m5": "Extrañamente satisfactorio, ¿no?", "m15": "Ya vas por la mitad.", "m45": "Te encantaría Zen Bubbles.", "m100": "Bueno, de verdad te encanta Zen Bubbles.", "cleared": "Hoja terminada — aquí tienes otra.", "sound_on": "Sonido activado", "sound_off": "Sonido desactivado", "flick_nice": "¡Bien! Ahora supera al portero: nunca deja de moverse.", "goal": "¡GOL!"}</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Sole Via Entertainment — volver arriba">
+      <img class="brand-mark" src="../assets/brand/sole-via-mark.svg" alt="" width="44" height="44">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#games">Juegos</a>
+      <a href="#studio">Estudio</a>
+      <a href="#support">Soporte</a>
+    </nav>
+    <nav class="lang-switch" aria-label="Idioma">
+      <a href="../" hreflang="en" lang="en" data-lang="en" title="English"><abbr title="English">EN</abbr></a>
+      <a href="../pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt" title="Português"><abbr title="Português">PT</abbr></a>
+      <a href="../es/" hreflang="es-419" lang="es-419" data-lang="es" title="Español" aria-current="true"><abbr title="Español">ES</abbr></a>
+    </nav>
+    <a class="btn btn-sun btn-sm header-cta" href="#games">Descarga los juegos</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Estudio independiente de juegos móviles · Miami, Florida</p>
+        <h1 class="display">Juegos pequeños que se&nbsp;<em>sienten</em>.</h1>
+        <p class="lede">Convertimos cosas cotidianas que dan ganas de tocar — una hoja de plástico de burbujas, una tapita sobre la mesa — en juegos rápidos y relajantes para iPhone y Android. Gratis, sin conexión y sin registro.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#games">Conoce nuestros juegos</a>
+          <a class="btn btn-ghost" href="#contact">Trabaja con nosotros</a>
+        </div>
+        <ul class="hero-facts" aria-label="El estudio en breve">
+          <li><strong>2</strong> juegos publicados</li>
+          <li><strong>iOS</strong> &amp; <strong>Android</strong></li>
+          <li><strong>EN · PT · ES</strong></li>
+        </ul>
+      </div>
+
+      <div class="hero-play">
+        <div class="sheet-stage">
+          <div class="sheet" id="wrap-sheet" role="group" aria-label="Plástico de burbujas interactivo. Toca una burbuja para reventarla.">
+            <!-- bubbles are built by assets/js/site.js -->
+          </div>
+          <a class="stray-cap" href="#cap-kickers" aria-label="Ir a Cap Kickers">
+            <img src="../assets/img/fx/cap-crown-red.webp" alt="" width="128" height="128">
+          </a>
+        </div>
+        <div class="sheet-hud">
+          <p class="sheet-hint"><span class="mono" id="pop-count">0</span> reventadas · <span id="pop-msg">Anda, revienta una.</span></p>
+          <button class="chip-btn" type="button" id="sound-toggle" aria-pressed="true">Sonido activado</button>
+        </div>
+        <p class="sheet-note">Burbujas y sonidos reales de <a href="#zen-bubbles">Zen Bubbles</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section class="games" id="games" aria-labelledby="games-title">
+    <div class="wrap section-head">
+      <p class="eyebrow">Nuestros juegos</p>
+      <h2 class="display h2" id="games-title">Dos juegos. Un dedo cada uno.</h2>
+      <p class="section-lede">Ambos son gratis en App Store y Google Play, funcionan sin conexión y hablan español, portugués e inglés.</p>
+    </div>
+
+    <!-- Zen Bubbles -->
+    <article class="game game-zen" id="zen-bubbles" aria-labelledby="zen-title">
+      <div class="wrap game-grid">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="../assets/img/zen/icon.webp" alt="Ícono de la app Zen Bubbles" width="96" height="96">
+            <div>
+              <p class="game-kicker">Casual · Relajación</p>
+              <h3 class="game-name" id="zen-title">Zen Bubbles</h3>
+              <p class="game-sub">Revienta y relájate</p>
+            </div>
+          </div>
+          <p class="game-pitch">El extraño placer de reventar plástico de burbujas de verdad, en un tranquilo viaje entre islas. Supera una fase, mira cómo la burbujita salta a la siguiente e intenta batir tu mejor tiempo.</p>
+          <ul class="features">
+            <li><b>Cuatro mundos-isla</b> — las burbujas se salen de la cuadrícula, empiezan a flotar y luego se esconden tras escudos deslizantes.</li>
+            <li><b>Desafío Pop</b> — cada pocas horas llega una misión sorpresa con una recompensa sorpresa.</li>
+            <li><b>Prepárate</b> — bombas, copos de nieve y estilos de burbuja coleccionables en la Tienda.</li>
+            <li><b>Reventones suaves y vibración</b> — música tranquila y un toque ligero en cada burbuja.</li>
+          </ul>
+          <ul class="tags" aria-label="Sobre Zen Bubbles">
+            <li>Gratis</li><li>Sin conexión</li><li>Apto para todos (4+)</li><li>EN · PT · ES</li>
+          </ul>
+<p class="aka">En celulares en español aparece como <b>Burbujas Zen</b>.</p>
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6797921737" target="_blank" rel="noopener">
+              <img src="../assets/badges/app-store-es.svg" alt="Descárgalo en el App Store" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.zenbubbles&amp;hl=es_419" target="_blank" rel="noopener">
+              <img src="../assets/badges/google-play-es.svg" alt="Descargar en Google Play" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="3800">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 390 / 844">
+              <img class="shot is-active" src="../assets/img/zen/01-home.webp" alt="Pantalla de inicio de Zen Bubbles: la burbuja mascota sonriendo en una isla de plástico de burbujas al atardecer" width="640" height="1385">
+              <img class="shot" src="../assets/img/zen/02-journey.webp" alt="Mapa del viaje con las islas del Mundo 1 y el Mundo 2" width="640" height="1385" loading="lazy">
+              <img class="shot" src="../assets/img/zen/03-gameplay.webp" alt="Partida: burbujas medianas sobre plástico de burbujas, con una bomba y un copo de nieve" width="640" height="1385" loading="lazy">
+              <img class="shot" src="../assets/img/zen/04-shop.webp" alt="Tienda con bombas, congelar tiempo y los estilos de burbuja Neón, Océano y Atardecer" width="640" height="1385" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="Capturas de pantalla de Zen Bubbles">
+            <button role="tab" type="button" aria-selected="true">Inicio</button>
+            <button role="tab" type="button" aria-selected="false">Viaje</button>
+            <button role="tab" type="button" aria-selected="false">Partida</button>
+            <button role="tab" type="button" aria-selected="false">Tienda</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cap Kickers -->
+    <article class="game game-cap" id="cap-kickers" aria-labelledby="cap-title">
+      <div class="wrap game-grid game-grid-flip">
+        <div class="game-copy">
+          <div class="game-id">
+            <img class="app-icon" src="../assets/img/cap/icon.webp" alt="Ícono de la app Cap Kickers" width="96" height="96">
+            <div>
+              <p class="game-kicker">Deportes · Arcade</p>
+              <h3 class="game-name" id="cap-title">Cap Kickers</h3>
+              <p class="game-sub">Fútbol de tapitas con el dedo</p>
+            </div>
+          </div>
+          <p class="game-pitch">El fútbol de mesa que media Latinoamérica jugó en la escuela — el clásico <i>fútbol de tapitas</i> — ahora en tu bolsillo. No apuntes: dale un toque. Mientras más fuerte, más lejos llega la tapita.</p>
+          <ul class="features">
+            <li><b>Cinco toques por turno</b> — pasa una tapita por el hueco entre las otras dos para conservar la posesión y dispara en el quinto.</li>
+            <li><b>Solo contra la IA</b> — vence a cada rival en el camino de la campaña, desde Novato en adelante.</li>
+            <li><b>2 jugadores y Práctica</b> — pásale el teléfono a un amigo o calienta sin presión.</li>
+            <li><b>Vitrina de trofeos</b> — gana Tapitas jugando y desbloquea canchas y estilos de tapita.</li>
+          </ul>
+          <ul class="tags" aria-label="Sobre Cap Kickers">
+            <li>Gratis</li><li>Sin conexión</li><li>Apto para todos (4+)</li><li>EN · PT · ES</li>
+          </ul>
+          <p class="aka">En Latinoamérica se llama <b>Fútbol de Tapitas</b>, y en Brasil, <b lang="pt-BR">Futebol de Tampinha</b>.</p>
+          <div class="stores">
+            <a class="store-badge" href="https://apps.apple.com/app/id6805625628" target="_blank" rel="noopener">
+              <img src="../assets/badges/app-store-es.svg" alt="Descárgalo en el App Store" width="144" height="48">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.solevia.capkickers&amp;hl=es_419" target="_blank" rel="noopener">
+              <img src="../assets/badges/google-play-es.svg" alt="Descargar en Google Play" width="162" height="48">
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase" data-carousel data-interval="4200">
+          <div class="phone">
+            <div class="phone-screen" style="--ar: 1080 / 1920">
+              <img class="shot is-active" src="../assets/img/cap/01-home.webp" alt="Inicio de Cap Kickers: Solo contra la IA, 2 jugadores y Práctica" width="640" height="1138" loading="lazy">
+              <img class="shot" src="../assets/img/cap/02-gameplay.webp" alt="Partido en curso: tres tapitas azules en la cancha, toque 1 de 5" width="640" height="1138" loading="lazy">
+              <img class="shot" src="../assets/img/cap/03-reward-road.webp" alt="Campaña Solo contra la IA con recompensas y un cofre misterioso" width="640" height="1138" loading="lazy">
+              <img class="shot" src="../assets/img/cap/05-cabinet.webp" alt="Vitrina de trofeos con canchas desbloqueables: mesa, cemento, noche, calle y playa" width="640" height="1138" loading="lazy">
+              <img class="shot" src="../assets/img/cap/06-how-to-play.webp" alt="Cómo jugar: conoce a tu equipo de tres tapitas" width="640" height="1138" loading="lazy">
+            </div>
+          </div>
+          <div class="shot-tabs" role="tablist" aria-label="Capturas de pantalla de Cap Kickers">
+            <button role="tab" type="button" aria-selected="true">Inicio</button>
+            <button role="tab" type="button" aria-selected="false">Partido</button>
+            <button role="tab" type="button" aria-selected="false">Campaña</button>
+            <button role="tab" type="button" aria-selected="false">Trofeos</button>
+            <button role="tab" type="button" aria-selected="false">Cómo jugar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="flick" id="flick">
+          <div class="flick-head">
+            <div>
+              <p class="flick-title">Dale un toque</p>
+              <p class="flick-hint" id="flick-hint">Desliza la tapita azul hacia la portería. Más rápido, más lejos.</p>
+            </div>
+            <p class="flick-score mono" aria-live="polite"><span id="flick-goals">0</span> goles · <span id="flick-shots">0</span> tiros</p>
+          </div>
+          <canvas id="flick-canvas" aria-label="Mini cancha de Cap Kickers. Desliza la tapita azul para tirar a la portería." role="img"></canvas>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="wrap studio-grid">
+      <div>
+        <p class="eyebrow">El estudio</p>
+        <h2 class="display h2" id="studio-title">Un estudio pequeño con una regla simple: respetar el tiempo de quien juega.</h2>
+      </div>
+      <div class="studio-copy">
+        <p><b>Sole Via Entertainment LLC</b> es un estudio independiente con sede en Bay Harbor Islands, Miami. Diseñamos, desarrollamos y publicamos nuestros propios juegos — desde el primer boceto hasta la ficha en la tienda — y los mantenemos pequeños a propósito: fáciles de aprender, rápidos de jugar y con ganas de volver.</p>
+        <p>Nuestros juegos son gratuitos y se sostienen con anuncios. Eso también es un oficio y nos lo tomamos en serio: los anuncios van alrededor del juego, nunca encima, y nada de lo que necesitas para disfrutarlo queda bloqueado detrás de ellos.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <dl class="principles">
+        <div>
+          <dt>Sin cuentas</dt>
+          <dd>Sin registro ni correo. Tus récords y ajustes se quedan en tu dispositivo.</dd>
+        </div>
+        <div>
+          <dt>Sin conexión</dt>
+          <dd>En el avión, en la fila, en el metro: los juegos funcionan sin internet.</dd>
+        </div>
+        <div>
+          <dt>Tres idiomas</dt>
+          <dd>Español, portugués e inglés, en el juego y en la tienda.</dd>
+        </div>
+        <div>
+          <dt>Privacidad por defecto</dt>
+          <dd>Estadísticas de uso anónimas que puedes desactivar en Ajustes, y respeto total al aviso de rastreo de Apple.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT / CONTACT ============ -->
+  <section class="support" id="support" aria-labelledby="support-title">
+    <div class="wrap support-grid">
+      <div class="contact" id="contact">
+        <p class="eyebrow">Escríbenos</p>
+        <h2 class="display h2" id="support-title">Leemos cada mensaje.</h2>
+        <div class="mail-list">
+          <a class="mail" href="mailto:support@solevia.app">
+            <span class="mail-label">Soporte al jugador</span>
+            <span class="mail-addr">support@solevia.app</span>
+            <span class="mail-desc">Errores, preguntas y comentarios sobre los juegos.</span>
+          </a>
+          <a class="mail" href="mailto:contact@solevia.app">
+            <span class="mail-label">Negocios y prensa</span>
+            <span class="mail-addr">contact@solevia.app</span>
+            <span class="mail-desc">Alianzas, publicidad, prensa y temas legales.</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="legal-card">
+        <h3 class="legal-title">Políticas de los juegos</h3>
+        <div class="legal-rows">
+          <div class="legal-row">
+            <img src="../assets/img/zen/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Zen Bubbles</span>
+            <nav class="legal-links" aria-label="Políticas de Zen Bubbles">
+              <a href="../privacy/pop-zen/" hreflang="en">Privacidad</a>
+              <a href="../terms/pop-zen/" hreflang="en">Términos</a>
+              <a href="../about/pop-zen/" hreflang="en">Soporte</a>
+            </nav>
+          </div>
+          <div class="legal-row">
+            <img src="../assets/img/cap/icon.webp" alt="" width="40" height="40">
+            <span class="legal-name">Cap Kickers</span>
+            <nav class="legal-links" aria-label="Políticas de Cap Kickers">
+              <a href="../privacy/cap-kickers/" hreflang="en">Privacidad</a>
+              <a href="../terms/cap-kickers/" hreflang="en">Términos</a>
+              <a href="mailto:support@solevia.app?subject=Cap%20Kickers%20support">Soporte</a>
+            </nav>
+          </div>
+        </div>
+<p class="legal-note">Las políticas están disponibles en inglés.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="brand brand-sm" href="#top" aria-label="Volver arriba">
+      <img class="brand-mark" src="../assets/brand/sole-via-mark.svg" alt="" width="34" height="34">
+      <span class="brand-text"><span class="brand-name">Sole Via</span><span class="brand-sub">Entertainment</span></span>
+    </a>
+    <p class="footer-legal">© <span id="year">2026</span> Sole Via Entertainment LLC · Bay Harbor Islands, Florida</p>
+    <nav class="footer-links" aria-label="Pie de página">
+      <a href="../privacy/" hreflang="en">Privacidad</a>
+      <a href="../terms/" hreflang="en">Términos</a>
+      <a href="mailto:contact@solevia.app">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

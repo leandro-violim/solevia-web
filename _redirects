@@ -1,0 +1,19 @@
+# Cloudflare Pages redirects — friendly short links
+/zen-bubbles        /#zen-bubbles           302
+/zenbubbles         /#zen-bubbles           302
+/pop-zen            /#zen-bubbles           302
+/cap-kickers        /#cap-kickers           302
+/capkickers         /#cap-kickers           302
+/support            /#support               302
+/contact            /#contact               302
+/capkickers/privacy /privacy/cap-kickers/   301
+/cap-kickers/privacy /privacy/cap-kickers/  301
+/zen-bubbles/privacy /privacy/pop-zen/      301
+/capkickers/terms   /terms/cap-kickers/     301
+/cap-kickers/terms  /terms/cap-kickers/     301
+/zen-bubbles/terms  /terms/pop-zen/         301
+/pt-br               /pt/                    301
+/pt-BR               /pt/                    301
+/br                  /pt/                    302
+/es-419              /es/                    301
+/en                  /                       301

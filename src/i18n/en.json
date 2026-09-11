@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Sole Via Entertainment — Mobile game studio · Zen Bubbles & Cap Kickers",
+    "description": "Sole Via Entertainment is an independent mobile game studio in Miami making Zen Bubbles and Cap Kickers — small, tactile games for iPhone and Android. Free, offline, no sign-up."
+  },
+  "og": {
+    "title": "Sole Via Entertainment — Small games you can feel",
+    "description": "Independent mobile game studio in Miami. Makers of Zen Bubbles and Cap Kickers for iPhone and Android."
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "brand": {
+    "home_label": "Sole Via Entertainment — back to top"
+  },
+  "nav": {
+    "label": "Primary",
+    "games": "Games",
+    "studio": "Studio",
+    "support": "Support",
+    "cta": "Get the games",
+    "lang_label": "Language"
+  },
+  "hero": {
+    "eyebrow": "Independent mobile game studio · Miami, Florida",
+    "h1": "Small games you can&nbsp;<em>feel</em>.",
+    "lede": "We turn familiar, hands-on things — a sheet of bubble wrap, a bottle cap on a tabletop — into quick, calm games for iPhone and Android. Free to play, offline, no sign-up.",
+    "cta1": "Meet our games",
+    "cta2": "Work with us",
+    "facts_label": "Studio at a glance",
+    "fact1": "<strong>2</strong> games live",
+    "sheet_label": "Poppable bubble wrap. Press a bubble to pop it.",
+    "cap_label": "Jump to Cap Kickers",
+    "popped": "popped",
+    "msg0": "Go on — pop one.",
+    "note": "Real bubbles and pop sounds from <a href=\"#zen-bubbles\">Zen Bubbles</a>."
+  },
+  "games": {
+    "eyebrow": "Our games",
+    "h2": "Two games. One finger each.",
+    "lede": "Both are free on the App Store and Google Play, play fully offline, and speak English, Portuguese and Spanish."
+  },
+  "tags": {
+    "free": "Free",
+    "offline": "Plays offline",
+    "rated": "Rated 4+ / Everyone"
+  },
+  "stores": {
+    "apple_alt": "Download on the App Store",
+    "google_alt": "Get it on Google Play"
+  },
+  "zen": {
+    "icon_alt": "Zen Bubbles app icon",
+    "kicker": "Casual · Relaxation",
+    "sub": "Pop &amp; Relax",
+    "pitch": "The oddly satisfying pop of real bubble wrap, on a calm island journey. Clear a phase, watch the little bubble hop to the next one, and try to beat your best time.",
+    "f1": "<b>Four island worlds</b> — bubbles go off-grid, start drifting, then hide behind sliding shields.",
+    "f2": "<b>Pop Challenge</b> — a surprise mission with a surprise reward drops in every few hours.",
+    "f3": "<b>Gear up</b> — bombs, snowflakes and collectible bubble skins from the Shop.",
+    "f4": "<b>Soft pops &amp; haptics</b> — calm music, and a light tap on every pop.",
+    "tags_label": "Zen Bubbles facts",
+    "aka_block": "",
+    "shot1": "Zen Bubbles home screen: the smiling bubble mascot on a bubble-wrap island at sunset",
+    "shot2": "Your journey map with the World 1 and World 2 islands",
+    "shot3": "Gameplay: medium bubbles on a bubble-wrap board with a bomb and a snowflake power-up",
+    "shot4": "Shop with bomb and time-freeze power-ups and Neon, Ocean and Sunset bubble skins",
+    "tablist_label": "Zen Bubbles screenshots",
+    "tab1": "Home",
+    "tab2": "Journey",
+    "tab3": "Gameplay",
+    "tab4": "Shop"
+  },
+  "cap": {
+    "icon_alt": "Cap Kickers app icon",
+    "kicker": "Sports · Arcade",
+    "sub": "Bottle-cap finger soccer",
+    "pitch": "The tabletop game half of Latin America grew up playing at school — <i lang=\"pt\">futebol de tampinha</i> — now in your pocket. Flick, don't aim: the harder the flick, the farther the cap flies.",
+    "f1": "<b>Five touches a turn</b> — thread a cap through the gap to keep possession, then shoot on the fifth.",
+    "f2": "<b>Solo vs AI</b> — beat each rival on the campaign road, from Rookie upward.",
+    "f3": "<b>2 Players &amp; Practice</b> — pass-and-play on one phone, or warm up with no pressure.",
+    "f4": "<b>Trophy Cabinet</b> — earn Caps by playing and unlock pitches and cap styles.",
+    "tags_label": "Cap Kickers facts",
+    "aka": "Known as <b lang=\"pt-BR\">Futebol de Tampinha</b> in Brazil and <b lang=\"es\">Fútbol de Tapitas</b> across Spanish-speaking Latin America.",
+    "shot1": "Cap Kickers home: Solo vs AI, 2 Players and Practice",
+    "shot2": "Match in progress: three blue caps on a grass pitch, touch 1 of 5",
+    "shot3": "Solo vs AI campaign road with rewards and a mystery chest",
+    "shot4": "Trophy Cabinet with unlockable pitches: table, cement, night, street, beach",
+    "shot5": "How to play: meet your team of three bottle caps",
+    "tablist_label": "Cap Kickers screenshots",
+    "tab1": "Home",
+    "tab2": "Match",
+    "tab3": "Campaign",
+    "tab4": "Cabinet",
+    "tab5": "How to play"
+  },
+  "flick": {
+    "title": "Try a flick",
+    "hint": "Swipe the blue cap toward the goal. Faster swipe, longer shot.",
+    "goals": "goals",
+    "shots": "shots",
+    "canvas_label": "Mini Cap Kickers pitch. Swipe the blue cap to shoot at the goal."
+  },
+  "studio": {
+    "eyebrow": "The studio",
+    "h2": "A small studio with a simple rule: respect the player’s time.",
+    "p1": "<b>Sole Via Entertainment LLC</b> is an independent studio based in Bay Harbor Islands, Miami. We design, build and publish our own games — from the first sketch to the store listing — and we keep them small on purpose: easy to learn, quick to play, satisfying to come back to.",
+    "p2": "Our games are free and supported by ads. That is a craft of its own, and we take it seriously: ads sit around the play, never on top of it, and nothing you need to enjoy the game is locked behind them.",
+    "pr1_t": "No accounts",
+    "pr1_d": "No sign-up, no email. Your records and settings stay on your device.",
+    "pr2_t": "Plays offline",
+    "pr2_d": "On a plane, in a queue, underground — the games work without a connection.",
+    "pr3_t": "Three languages",
+    "pr3_d": "English, Portuguese and Spanish, in the game and on the store.",
+    "pr4_t": "Privacy by default",
+    "pr4_d": "Anonymous usage stats you can switch off in Settings, and Apple’s tracking prompt honored."
+  },
+  "support": {
+    "eyebrow": "Get in touch",
+    "h2": "We read every message.",
+    "player_label": "Player support",
+    "player_desc": "Bugs, questions, feedback about a game.",
+    "biz_label": "Business &amp; press",
+    "biz_desc": "Partnerships, advertising, press and legal.",
+    "policies_title": "Game policies",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support",
+    "zen_policies_label": "Zen Bubbles policies",
+    "cap_policies_label": "Cap Kickers policies",
+    "legal_note_block": ""
+  },
+  "footer": {
+    "top_label": "Back to top",
+    "label": "Footer",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "js": {
+    "pop_bubble": "Pop bubble",
+    "popped_bubble": "Popped bubble",
+    "m1": "There it is.",
+    "m5": "Oddly satisfying, right?",
+    "m15": "Halfway through the sheet.",
+    "m45": "You would like Zen Bubbles.",
+    "m100": "Okay, you really like Zen Bubbles.",
+    "cleared": "Sheet cleared — here’s a fresh one.",
+    "sound_on": "Sound on",
+    "sound_off": "Sound off",
+    "flick_nice": "Nice. Now beat the keeper — he never stops moving.",
+    "goal": "GOAL!"
+  }
+}

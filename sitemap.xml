@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://solevia.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/"/>
+  </url>
+  <url><loc>https://solevia.app/privacy/</loc></url>
+  <url><loc>https://solevia.app/terms/</loc></url>
+  <url><loc>https://solevia.app/privacy/pop-zen/</loc></url>
+  <url><loc>https://solevia.app/terms/pop-zen/</loc></url>
+  <url><loc>https://solevia.app/about/pop-zen/</loc></url>
+  <url><loc>https://solevia.app/privacy/cap-kickers/</loc></url>
+  <url><loc>https://solevia.app/terms/cap-kickers/</loc></url>
+</urlset>
