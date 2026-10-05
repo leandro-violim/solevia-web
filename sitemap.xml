@@ -23,11 +23,173 @@
   </url>
   <url><loc>https://solevia.app/privacy/</loc></url>
   <url><loc>https://solevia.app/terms/</loc></url>
-  <url><loc>https://solevia.app/privacy/pop-zen/</loc></url>
-  <url><loc>https://solevia.app/terms/pop-zen/</loc></url>
   <url><loc>https://solevia.app/about/pop-zen/</loc></url>
-  <url><loc>https://solevia.app/privacy/cap-kickers/</loc></url>
-  <url><loc>https://solevia.app/terms/cap-kickers/</loc></url>
-  <url><loc>https://solevia.app/privacy/ring-haven/</loc></url>
-  <url><loc>https://solevia.app/terms/ring-haven/</loc></url>
+  <url>
+    <loc>https://solevia.app/privacy/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/privacy/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/privacy/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/terms/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/pop-zen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/pop-zen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/pop-zen/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/privacy/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/privacy/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/privacy/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/terms/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/cap-kickers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cap-kickers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cap-kickers/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/privacy/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/privacy/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/privacy/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/terms/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/squish-sort/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/squish-sort/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/squish-sort/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/privacy/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/ring-haven/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/privacy/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/ring-haven/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/privacy/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/ring-haven/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/terms/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/ring-haven/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/ring-haven/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/ring-haven/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/ring-haven/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/ring-haven/"/>
+  </url>
 </urlset>
