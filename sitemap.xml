@@ -192,4 +192,25 @@
     <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/ring-haven/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/ring-haven/"/>
   </url>
+  <url>
+    <loc>https://solevia.app/privacy/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/bubble-wash/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/privacy/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/bubble-wash/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/privacy/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/bubble-wash/"/>
+  </url>
 </urlset>
