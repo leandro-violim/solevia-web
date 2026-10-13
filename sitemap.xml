@@ -234,4 +234,46 @@
     <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/privacy/cuckoo-club/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/privacy/cuckoo-club/"/>
   </url>
+  <url>
+    <loc>https://solevia.app/terms/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/bubble-wash/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/bubble-wash/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/bubble-wash/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/bubble-wash/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/bubble-wash/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/terms/cuckoo-club/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cuckoo-club/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/pt/terms/cuckoo-club/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cuckoo-club/"/>
+  </url>
+  <url>
+    <loc>https://solevia.app/es/terms/cuckoo-club/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solevia.app/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://solevia.app/pt/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://solevia.app/es/terms/cuckoo-club/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solevia.app/terms/cuckoo-club/"/>
+  </url>
 </urlset>

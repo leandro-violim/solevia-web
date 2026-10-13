@@ -23,7 +23,11 @@ GAMES = {
     "cap-kickers": "Cap Kickers",
     "squish-sort": "Squish Sort",
     "ring-haven": "Ring Haven: Calm Ring Puzzle",
+    "bubble-wash": "Bubble Wash",
+    "cuckoo-club": "Cuckoo Club",
 }
+# Bubble Wash and Cuckoo Club privacy pages are hand-translated (pt/es), so only their terms are generated.
+TERMS_ONLY = {"bubble-wash", "cuckoo-club"}
 KINDS = ("privacy", "terms")
 LANGS = {  # code -> (html lang, hreflang, label)
     "en": ("en", "en", "English"),
@@ -158,6 +162,28 @@ TR = {
  "Some optional benefits (&ldquo;extra jar&rdquo;": (
   "Alguns benefícios opcionais (&ldquo;pote extra&rdquo;, &ldquo;desfazer&rdquo;) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todas as fases do App podem ser concluídas sem assistir a nenhum anúncio.",
   "Algunos beneficios opcionales (&ldquo;frasco extra&rdquo;, &ldquo;deshacer&rdquo;) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los niveles de la App se pueden completar sin ver ningún anuncio."),
+ "In-app purchases": ("Compras no app", "Compras dentro de la app"),
+ "The App may offer optional in-app purchases": (
+  "O App pode oferecer compras opcionais dentro do app, como a remoção de anúncios. As compras são processadas pela Apple (App Store) ou pelo Google (Google Play), conforme os termos e as políticas de privacidade de cada um. Nunca recebemos o número do seu cartão, o endereço de cobrança nem outros dados de pagamento. A loja informa ao App apenas que a compra foi concluída (o produto e um token de compra), para que o App libere o que você comprou. Análises anônimas e agregadas podem registrar que uma compra ocorreu (produto, preço, moeda), sem identificar você. Suas compras pertencem ao seu ID Apple ou à sua conta Google, e você pode usar &ldquo;Restaurar compras&rdquo; em Ajustes para recuperá-las em um novo dispositivo. Remover os anúncios encerra os anúncios em banner e intersticiais; os anúncios com recompensa opcionais continuam disponíveis se você escolher assisti-los.",
+  "La App puede ofrecer compras opcionales dentro de la app, como quitar los anuncios. Las compras las procesa Apple (App Store) o Google (Google Play) según sus propios términos y políticas de privacidad. Nunca recibimos el número de tu tarjeta, tu dirección de facturación ni otros datos de pago. La tienda solo le informa a la App que la compra se completó (el producto y un token de compra), para que la App desbloquee lo que compraste. Las analíticas anónimas y agregadas pueden registrar que ocurrió una compra (producto, precio, moneda) sin identificarte. Tus compras pertenecen a tu ID de Apple o a tu cuenta de Google, y puedes usar &ldquo;Restaurar compras&rdquo; en Ajustes para recuperarlas en un dispositivo nuevo. Quitar los anuncios detiene los anuncios de banner e intersticiales; los anuncios con recompensa opcionales siguen disponibles si decides verlos."),
+ "The App is free to play and may offer optional in-app purchases": (
+  "O App é gratuito para jogar e pode oferecer compras opcionais dentro do app. Os preços aparecem na loja, na sua moeda local, antes de você comprar. As compras são feitas por meio da Apple ou do Google, e pagas a eles, conforme os termos de cada um; nós não processamos pagamentos. Os reembolsos são tratados pela loja onde você comprou (Apple: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>; Google Play: ajuda da Play Store), e não por nós, e estão sujeitos à política de reembolso dessa loja. Use &ldquo;Restaurar compras&rdquo; em Ajustes para restaurar itens que você já comprou no mesmo ID Apple ou na mesma conta Google. Os itens comprados são para uso pessoal dentro do App, estão vinculados à sua conta da loja e não são transferíveis.",
+  "La App es gratuita para jugar y puede ofrecer compras opcionales dentro de la app. Los precios se muestran en la tienda, en tu moneda local, antes de comprar. Las compras se realizan a través de Apple o Google, y se pagan a ellos, según sus términos; nosotros no procesamos pagos. Los reembolsos los gestiona la tienda donde compraste (Apple: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>; Google Play: ayuda de Play Store), no nosotros, y están sujetos a la política de reembolsos de esa tienda. Usa &ldquo;Restaurar compras&rdquo; en Ajustes para restaurar los artículos que ya compraste con el mismo ID de Apple o la misma cuenta de Google. Los artículos comprados son para uso personal dentro de la App, están vinculados a tu cuenta de la tienda y no son transferibles."),
+ "In-app currency (&ldquo;Coins&rdquo;)": ("Moeda do app (&ldquo;Moedas&rdquo;)", "Moneda de la app (&ldquo;Monedas&rdquo;)"),
+ "In-app currency (&ldquo;Stars&rdquo;)": ("Moeda do app (&ldquo;Estrelas&rdquo;)", "Moneda de la app (&ldquo;Estrellas&rdquo;)"),
+ "Coins are a soft, in-app currency": (
+  "As Moedas são uma moeda virtual do app, ganha jogando. As Moedas não têm valor monetário no mundo real, não podem ser trocadas por dinheiro e nunca são vendidas por dinheiro de verdade. As skins de ferramentas e os fundos desbloqueados com Moedas são cosméticos, só podem ser usados dentro do App e nunca mudam a forma como uma fase é jogada.",
+  "Las Monedas son una moneda virtual de la app, que se gana jugando. Las Monedas no tienen valor monetario en el mundo real, no se pueden canjear por dinero y nunca se venden por dinero real. Los estilos de herramientas y los fondos que se desbloquean con Monedas son cosméticos, solo se pueden usar dentro de la App y nunca cambian cómo se juega un nivel."),
+ "Stars are a soft, in-app currency": (
+  "As Estrelas são uma moeda virtual do app, ganha jogando. As Estrelas não têm valor monetário no mundo real, não podem ser trocadas por dinheiro e nunca são vendidas por dinheiro de verdade. Os versos de cartas e os avatares desbloqueados com Estrelas são cosméticos, só podem ser usados dentro do App e nunca mudam a forma como uma rodada é jogada.",
+  "Las Estrellas son una moneda virtual de la app, que se gana jugando. Las Estrellas no tienen valor monetario en el mundo real, no se pueden canjear por dinero y nunca se venden por dinero real. Los reversos de cartas y los avatares que se desbloquean con Estrellas son cosméticos, solo se pueden usar dentro de la App y nunca cambian cómo se juega una ronda."),
+ "Some optional benefits (&ldquo;golden sponge&rdquo;": (
+  "Alguns benefícios opcionais (&ldquo;esponja dourada&rdquo;, &ldquo;moedas em dobro&rdquo;) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todas as fases do App podem ser concluídas sem assistir a nenhum anúncio.",
+  "Algunos beneficios opcionales (&ldquo;esponja dorada&rdquo;, &ldquo;monedas dobles&rdquo;) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los niveles de la App se pueden completar sin ver ningún anuncio."),
+ "Some optional benefits (a 24-hour themed pack": (
+  "Alguns benefícios opcionais (um pacote temático de 24 horas, uma dica extra para um impostor pego) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todos os pacotes e modos principais do App estão disponíveis sem assistir a nenhum anúncio.",
+  "Algunos beneficios opcionales (un paquete temático de 24 horas, una pista extra para un impostor atrapado) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los paquetes y modos principales de la App están disponibles sin ver ningún anuncio."),
+ "Last updated: October 13, 2026": ("Última atualização: 13 de outubro de 2026", "Última actualización: 13 de octubre de 2026"),
  "Acceptable use": ("Uso aceitável", "Uso aceptable"),
  "You agree not to reverse engineer": (
   "Você concorda em não fazer engenharia reversa, modificar ou redistribuir o App, nem tentar interferir no seu funcionamento normal, na sua publicidade ou na sua segurança.",
@@ -297,6 +323,8 @@ def main():
     n = 0
     for slug in GAMES:
         for kind in KINDS:
+            if kind == "privacy" and slug in TERMS_ONLY:
+                continue
             p = ROOT / kind / slug / "index.html"
             en = p.read_text(encoding="utf-8")
             en = add_alternates(en, slug, kind, "en")
