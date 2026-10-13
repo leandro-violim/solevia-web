@@ -57,6 +57,14 @@ language switch in the header.
 - **Direct links are respected:** `/pt/` and `/es/` never redirect, so shared links and search
   engines always get the page they asked for (each page declares `hreflang` alternates).
 
+## Legal pages (en · pt-BR · es)
+Every game has `/privacy/<slug>/` and `/terms/<slug>/` in English, plus `/pt/privacy/<slug>/`,
+`/pt/terms/<slug>/`, `/es/privacy/<slug>/`, `/es/terms/<slug>/`. The English pages are the source;
+`python3 tools/build_legal.py` adds hreflang links and the language switch to them and regenerates
+the pt/es pages from the hand-written translations inside the script. It fails if an English block
+has no translation, so after any English legal edit re-run it and translate the new block.
+A new game's pages ship in all three languages (add its slug to `GAMES` in the script).
+
 To change copy: edit `src/i18n/*.json` (or `src/index.template.html` for markup) and run
 ```bash
 python3 tools/build.py
