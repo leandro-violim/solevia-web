@@ -236,7 +236,7 @@ DAILY = {  # which "Daily ..." feature a game's analytics sentence refers to
     "squish-sort": ("o Desafio Diário", "el Desafío Diario"),
 }
 
-BLOCK = re.compile(r'<(h1|h2|p|li)([^>]*)>(.*?)</\1>|<div class="updated">(.*?)</div>', re.S)
+BLOCK = re.compile(r'<(h1|h2|p|li)([^>]*)>(.*?)</\1>|<div class="updated">Last updated: October 16, 2026</div>', re.S)
 
 
 def lookup(text, game, idx):
