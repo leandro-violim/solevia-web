@@ -25,9 +25,10 @@ GAMES = {
     "ring-haven": "Ring Haven: Calm Ring Puzzle",
     "bubble-wash": "Bubble Wash",
     "cuckoo-club": "Cuckoo Club",
+    "sorteio-secreto": "Sorteio Secreto",
 }
-# Bubble Wash and Cuckoo Club privacy pages are hand-translated (pt/es), so only their terms are generated.
-TERMS_ONLY = {"bubble-wash", "cuckoo-club"}
+# Bubble Wash, Cuckoo Club and Sorteio Secreto privacy pages are hand-translated (pt/es), so only their terms are generated.
+TERMS_ONLY = {"bubble-wash", "cuckoo-club", "sorteio-secreto"}
 KINDS = ("privacy", "terms")
 LANGS = {  # code -> (html lang, hreflang, label)
     "en": ("en", "en", "English"),
@@ -155,6 +156,13 @@ TR = {
  "Fluff is a soft, in-app currency": (
   "Fluff é uma moeda virtual do app, ganha jogando. O Fluff não tem valor monetário no mundo real, não pode ser trocado por dinheiro e nunca é vendido por dinheiro de verdade. As skins cosméticas e os temas de pote comprados com Fluff só podem ser usados dentro do App e nunca mudam a forma como uma fase é jogada.",
   "Fluff es una moneda virtual de la app, que se gana jugando. Fluff no tiene valor monetario en el mundo real, no se puede canjear por dinero y nunca se vende por dinero real. Los estilos cosméticos y los temas de frasco que se compran con Fluff solo se pueden usar dentro de la App y nunca cambian cómo se juega un nivel."),
+ "Draws and sealed links": ("Sorteios e links lacrados", "Sorteos y enlaces sellados"),
+ "The App draws names at random": (
+  "O App sorteia os nomes ao acaso, segundo as regras que você define. Você é responsável pelos nomes que informa, pelas pessoas do seu grupo e por enviar cada link lacrado à pessoa certa. Um link lacrado foi feito para abrir uma única vez; ele detecta uma segunda leitura, mas não impede a primeira, e quem tiver o link inteiro consegue ler o par. Não garantimos que um link permaneça sem abrir, nem que um sorteio seja possível com qualquer combinação de regras. Veja a <a href=\"{PRIV}\">Política de Privacidade</a> para saber o que guardamos e o que não guardamos.",
+  "La App sortea los nombres al azar, según las reglas que definas. Eres responsable de los nombres que ingreses, de las personas de tu grupo y de enviar cada enlace sellado a la persona correcta. Un enlace sellado está pensado para abrirse una sola vez; detecta una segunda lectura, pero no impide la primera, y quien tenga el enlace completo puede leer el par. No garantizamos que un enlace se mantenga sin abrir, ni que un sorteo sea posible con cualquier combinación de reglas. Consulta la <a href=\"{PRIV}\">Política de Privacidad</a> para saber qué guardamos y qué no."),
+ "Some optional benefits (a theme for one group)": (
+  "Alguns benefícios opcionais (um tema para um grupo) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; o sorteio, as regras e a revelação estão disponíveis sem assistir a nenhum anúncio.",
+  "Algunos beneficios opcionales (un tema para un grupo) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; el sorteo, las reglas y la revelación están disponibles sin ver ningún anuncio."),
  "Rewarded ads": ("Anúncios com recompensa", "Anuncios con recompensa"),
  "Some optional benefits (&ldquo;next move&rdquo;": (
   "Alguns benefícios opcionais (&ldquo;próximo movimento&rdquo;, &ldquo;desfazer um elo&rdquo;, &ldquo;Glow em dobro&rdquo;) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todas as fases do App podem ser concluídas sem assistir a nenhum anúncio.",
@@ -183,6 +191,8 @@ TR = {
  "Some optional benefits (a 24-hour themed pack": (
   "Alguns benefícios opcionais (um pacote temático de 24 horas, uma dica extra para um impostor pego) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todos os pacotes e modos principais do App estão disponíveis sem assistir a nenhum anúncio.",
   "Algunos beneficios opcionales (un paquete temático de 24 horas, una pista extra para un impostor atrapado) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los paquetes y modos principales de la App están disponibles sin ver ningún anuncio."),
+ "Last updated: October 16, 2026": ("Última atualização: 16 de outubro de 2026", "Última actualización: 16 de octubre de 2026"),
+ "Last updated: October 20, 2026": ("Última atualização: 20 de outubro de 2026", "Última actualización: 20 de octubre de 2026"),
  "Last updated: October 13, 2026": ("Última atualização: 13 de outubro de 2026", "Última actualización: 13 de octubre de 2026"),
  "Acceptable use": ("Uso aceitável", "Uso aceptable"),
  "You agree not to reverse engineer": (
@@ -236,7 +246,7 @@ DAILY = {  # which "Daily ..." feature a game's analytics sentence refers to
     "squish-sort": ("o Desafio Diário", "el Desafío Diario"),
 }
 
-BLOCK = re.compile(r'<(h1|h2|p|li)([^>]*)>(.*?)</\1>|<div class="updated">Last updated: October 16, 2026</div>', re.S)
+BLOCK = re.compile(r'<(h1|h2|p|li)([^>]*)>(.*?)</\1>|<div class="updated">(Last updated:[^<]*)</div>', re.S)
 
 
 def lookup(text, game, idx):

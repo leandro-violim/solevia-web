@@ -509,3 +509,37 @@ b, strong { font-weight: 650; }
 .hub-name small { font-weight: 400; font-size: 14.5px; color: var(--tide); }
 .hub-go { font-size: 1.3rem; color: var(--tide); }
 .hub-back { margin-top: 32px; }
+
+/* ---------- Products: one card per game or app (built from assets/data/products.json) ---------- */
+.products { padding-block: var(--section) calc(var(--section) * 0.6); }
+.products .section-head { margin-bottom: clamp(28px, 4vw, 44px); }
+.pgroup { margin-top: clamp(28px, 4vw, 48px); }
+.pgroup-title { margin: 0 0 18px; font: 500 13px/1.2 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--tide); }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 24px; }
+.pcard {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); scroll-margin-top: 90px;
+}
+.pshot {
+  display: grid; place-items: center; padding: 26px 20px 0; height: 300px; overflow: hidden;
+  background: linear-gradient(160deg, var(--sun-soft), transparent 70%), var(--salt);
+}
+.pshot-img {
+  width: min(190px, 62%); height: auto; align-self: end;
+  border-radius: 24px 24px 0 0; box-shadow: 0 0 0 5px #10181B, 0 22px 40px -18px rgba(0, 0, 0, 0.55);
+}
+.pcard[data-status="coming-soon"] .pshot-img { filter: saturate(0.9); }
+.pbody { display: flex; flex-direction: column; flex: 1; padding: 22px 22px 24px; }
+.pid { display: flex; align-items: center; gap: 14px; }
+.pcard .app-icon { width: 64px; height: 64px; box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--line); }
+.pkicker { margin: 0 0 4px; font: 500 12px/1.2 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--tide); }
+.pname { margin: 0; font: 400 1.6rem/1.1 var(--f-display); letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.ppitch { margin: 16px 0 0; color: var(--ink); line-height: 1.5; flex: 1; }
+.pcard .stores { margin-top: 20px; gap: 10px; align-items: center; }
+.pcard .store-badge img { height: 44px; }
+.soon-pill, .soon-note { font: 500 13px/1 var(--f-mono); letter-spacing: 0.03em; color: var(--tide); }
+.soon-pill { padding: 11px 16px; border-radius: 999px; border: 1px dashed var(--tide); color: var(--ink); }
+.flick-band { padding-block: clamp(40px, 6vw, 72px); }
+.flick-band .flick { margin-top: 0; }
+@media (max-width: 560px) { .pshot { height: 270px; } }
