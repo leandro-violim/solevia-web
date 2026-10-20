@@ -1,0 +1,260 @@
+{
+  "_readme": "One entry per product. Adding a product = one entry here, then `python3 tools/build.py`. status: 'live' = on at least one store (needs an apple id and/or a play package, badges link to them); 'coming-soon' = no store listing yet (no badges, no store link). Never link an unreleased listing. A live product with only one store shows 'coming soon' for the other.",
+  "products": [
+    {
+      "id": "zen-bubbles",
+      "slug": "pop-zen",
+      "kind": "game",
+      "status": "live",
+      "apple": "6797921737",
+      "play": "app.solevia.zenbubbles",
+      "icon": "assets/img/zen/icon.webp",
+      "shot": {
+        "en": "assets/img/zen/03-gameplay.webp"
+      },
+      "shot_size": [
+        640,
+        1385
+      ],
+      "about": "about/pop-zen/",
+      "name": {
+        "en": "Zen Bubbles",
+        "pt": "Zen Bubbles",
+        "es": "Zen Bubbles"
+      },
+      "kicker": {
+        "en": "Casual · Relaxation",
+        "pt": "Casual · Relaxamento",
+        "es": "Casual · Relajación"
+      },
+      "pitch": {
+        "en": "The oddly satisfying pop of real bubble wrap, on a calm island journey.",
+        "pt": "O estouro satisfatório do plástico-bolha de verdade, numa jornada tranquila por ilhas.",
+        "es": "El satisfactorio estallido del plástico de burbujas de verdad, en un tranquilo viaje por islas."
+      },
+      "shot_alt": {
+        "en": "Zen Bubbles gameplay: bubbles on a bubble-wrap board with a bomb and a snowflake power-up",
+        "pt": "Jogabilidade do Zen Bubbles: bolhas num tabuleiro de plástico-bolha com bomba e floco de neve",
+        "es": "Jugabilidad de Zen Bubbles: burbujas en un tablero de plástico de burbujas con bomba y copo de nieve"
+      }
+    },
+    {
+      "id": "cap-kickers",
+      "slug": "cap-kickers",
+      "kind": "game",
+      "status": "live",
+      "apple": "6805625628",
+      "play": "app.solevia.capkickers",
+      "icon": "assets/img/cap/icon.webp",
+      "shot": {
+        "en": "assets/img/cap/02-gameplay.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Cap Kickers",
+        "pt": "Cap Kickers",
+        "es": "Cap Kickers"
+      },
+      "kicker": {
+        "en": "Sports · Arcade",
+        "pt": "Esportes · Arcade",
+        "es": "Deportes · Arcade"
+      },
+      "pitch": {
+        "en": "Bottle-cap finger soccer: flick, don't aim. The harder the flick, the farther the cap flies.",
+        "pt": "Futebol de tampinha: dê o peteleco, sem mirar. Quanto mais forte, mais longe a tampinha voa.",
+        "es": "Fútbol de tapitas: lanza el chasquido, sin apuntar. Cuanto más fuerte, más lejos vuela la tapita."
+      },
+      "shot_alt": {
+        "en": "Cap Kickers match: three blue caps on a grass pitch",
+        "pt": "Partida de Cap Kickers: três tampinhas azuis num campo de grama",
+        "es": "Partido de Cap Kickers: tres tapitas azules en una cancha de césped"
+      }
+    },
+    {
+      "id": "squish-sort",
+      "slug": "squish-sort",
+      "kind": "game",
+      "status": "live",
+      "apple": "6816166722",
+      "play": "app.solevia.squishsort",
+      "icon": "assets/img/squish-sort/icon.webp",
+      "shot": {
+        "en": "assets/img/squish-sort/shot.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Squish Sort",
+        "pt": "Squish Sort",
+        "es": "Squish Sort"
+      },
+      "kicker": {
+        "en": "Puzzle · Color sort",
+        "pt": "Quebra-cabeça · Ordenar cores",
+        "es": "Puzzle · Ordenar colores"
+      },
+      "pitch": {
+        "en": "A calm color-sort puzzle where every piece is a soft, squishy toy with a happy little face.",
+        "pt": "Um quebra-cabeça calmo de ordenar cores, em que cada peça é um brinquedo macio e fofo com carinha feliz.",
+        "es": "Un puzle tranquilo de ordenar colores, en el que cada pieza es un juguete blandito con carita feliz."
+      },
+      "shot_alt": {
+        "en": "Squish Sort: squishy toys sorted by color in glass jars",
+        "pt": "Squish Sort: brinquedos macios separados por cor em potes de vidro",
+        "es": "Squish Sort: juguetes blanditos ordenados por color en frascos de vidrio"
+      }
+    },
+    {
+      "id": "ring-haven",
+      "slug": "ring-haven",
+      "kind": "game",
+      "status": "live",
+      "apple": null,
+      "play": "app.solevia.ringhaven",
+      "icon": "assets/img/ring-haven/icon.webp",
+      "shot": {
+        "en": "assets/img/ring-haven/shot.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Ring Haven",
+        "pt": "Ring Haven",
+        "es": "Ring Haven"
+      },
+      "kicker": {
+        "en": "Puzzle · Calm",
+        "pt": "Quebra-cabeça · Calmo",
+        "es": "Puzle · Calma"
+      },
+      "pitch": {
+        "en": "Turn pearl rings, line up the gaps and guide a glowing orb home. No timers, no lives.",
+        "pt": "Gire anéis de pérola, alinhe as aberturas e leve uma esfera brilhante para casa. Sem cronômetro, sem vidas.",
+        "es": "Gira anillos de perla, alinea los huecos y lleva una esfera brillante a casa. Sin temporizador, sin vidas."
+      },
+      "shot_alt": {
+        "en": "Ring Haven level 1: nested pearl rings with a glowing orb",
+        "pt": "Ring Haven fase 1: anéis de pérola com uma esfera brilhante",
+        "es": "Ring Haven nivel 1: anillos de perla con una esfera brillante"
+      }
+    },
+    {
+      "id": "bubble-wash",
+      "slug": "bubble-wash",
+      "kind": "game",
+      "status": "live",
+      "apple": null,
+      "play": "app.solevia.bubblewash",
+      "icon": "assets/img/bubble-wash/icon.webp",
+      "shot": {
+        "en": "assets/img/bubble-wash/shot.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Bubble Wash",
+        "pt": "Bubble Wash",
+        "es": "Bubble Wash"
+      },
+      "kicker": {
+        "en": "Casual · Cleaning",
+        "pt": "Casual · Limpeza",
+        "es": "Casual · Limpieza"
+      },
+      "pitch": {
+        "en": "Scrub, rinse and pop bubbles until it all sparkles. Calm and satisfying.",
+        "pt": "Esfregue, enxágue e estoure bolhas até tudo brilhar. Calmo e satisfatório.",
+        "es": "Frota, enjuaga y revienta burbujas hasta que todo brille. Tranquilo y satisfactorio."
+      },
+      "shot_alt": {
+        "en": "Bubble Wash level 1: a foamy sneaker being scrubbed clean",
+        "pt": "Bubble Wash fase 1: um tênis cheio de espuma sendo limpo",
+        "es": "Bubble Wash nivel 1: una zapatilla con espuma que se está limpiando"
+      }
+    },
+    {
+      "id": "cuckoo-club",
+      "slug": "cuckoo-club",
+      "kind": "game",
+      "status": "live",
+      "apple": null,
+      "play": "app.solevia.cuckooclub",
+      "icon": "assets/img/cuckoo-club/icon.webp",
+      "shot": {
+        "en": "assets/img/cuckoo-club/shot.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Cuckoo Club",
+        "pt": "Cuckoo Club",
+        "es": "Cuckoo Club"
+      },
+      "kicker": {
+        "en": "Party · Word game",
+        "pt": "Festa · Jogo de palavras",
+        "es": "Fiesta · Juego de palabras"
+      },
+      "pitch": {
+        "en": "Pass the phone, say a clue, find the imposter. A word and picture party game for 3 to 12 players.",
+        "pt": "Passe o celular, dê uma dica, descubra o impostor. Um jogo de festa com palavras e imagens para 3 a 12 jogadores.",
+        "es": "Pasa el teléfono, da una pista, encuentra al impostor. Un juego de fiesta con palabras e imágenes para 3 a 12 jugadores."
+      },
+      "shot_alt": {
+        "en": "Cuckoo Club: a secret picture card to pass to the next player",
+        "pt": "Cuckoo Club: uma carta secreta com imagem para passar ao próximo jogador",
+        "es": "Cuckoo Club: una carta secreta con imagen para pasar al siguiente jugador"
+      }
+    },
+    {
+      "id": "sorteio-secreto",
+      "slug": "sorteio-secreto",
+      "kind": "app",
+      "status": "coming-soon",
+      "apple": null,
+      "play": null,
+      "icon": "assets/img/sorteio-secreto/icon.webp",
+      "shot": {
+        "en": "assets/img/sorteio-secreto/shot-en.webp",
+        "pt": "assets/img/sorteio-secreto/shot-pt.webp",
+        "es": "assets/img/sorteio-secreto/shot-es.webp"
+      },
+      "shot_size": [
+        640,
+        1138
+      ],
+      "name": {
+        "en": "Secret Draw",
+        "pt": "Sorteio Secreto",
+        "es": "Sorteo Secreto"
+      },
+      "kicker": {
+        "en": "Everyday app · Gift exchange",
+        "pt": "App do dia a dia · Amigo secreto",
+        "es": "App del día a día · Intercambio de regalos"
+      },
+      "pitch": {
+        "en": "Secret Santa draws for family, office or class in minutes. No sign-up, and everyone sees only their own match.",
+        "pt": "Sorteio de amigo secreto para família, trabalho ou turma em minutos. Sem cadastro, e cada pessoa vê só o próprio par.",
+        "es": "Sorteo de amigo secreto para familia, oficina o clase en minutos. Sin registro, y cada persona ve solo su propio par."
+      },
+      "shot_alt": {
+        "en": "Secret Draw: the draw is done and ready to reveal",
+        "pt": "Sorteio Secreto: o sorteio está feito e pronto para revelar",
+        "es": "Sorteo Secreto: el sorteo está hecho y listo para revelar"
+      }
+    }
+  ]
+}
