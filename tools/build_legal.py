@@ -164,6 +164,10 @@ TR = {
   "Alguns benefícios opcionais (um tema para um grupo) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; o sorteio, as regras e a revelação estão disponíveis sem assistir a nenhum anúncio.",
   "Algunos beneficios opcionales (un tema para un grupo) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; el sorteo, las reglas y la revelación están disponibles sin ver ningún anuncio."),
  "Rewarded ads": ("Anúncios com recompensa", "Anuncios con recompensa"),
+ "Ads and optional purchases": ("Anúncios e compras opcionais", "Anuncios y compras opcionales"),
+ "The App is supported by ads. Some optional extras": (
+  "O App é mantido por anúncios. Alguns extras opcionais podem ser oferecidos em troca de assistir a um anúncio em vídeo premiado. Uma compra única opcional, o &ldquo;Pro&rdquo;, remove todos os anúncios para quem compra e libera extras; ela é vendida pela Apple (App Store) ou pelo Google (Google Play), conforme os termos deles, e pode ser recuperada com &ldquo;Restaurar compras&rdquo; em Ajustes. Sortear nomes, as regras e os links lacrados nunca ficam bloqueados por um anúncio.",
+  "La App se sostiene con anuncios. Algunos extras opcionales pueden ofrecerse a cambio de ver un anuncio de video con recompensa. Una compra única opcional, &ldquo;Pro&rdquo;, quita todos los anuncios para quien la compra y desbloquea extras; la venden Apple (App Store) o Google (Google Play) según sus términos, y se puede recuperar con &ldquo;Restaurar compras&rdquo; en Ajustes. Sortear nombres, las reglas y los enlaces sellados nunca se bloquean detrás de un anuncio."),
  "Some optional benefits (&ldquo;next move&rdquo;": (
   "Alguns benefícios opcionais (&ldquo;próximo movimento&rdquo;, &ldquo;desfazer um elo&rdquo;, &ldquo;Glow em dobro&rdquo;) são oferecidos em troca de assistir a um anúncio em vídeo com recompensa. Eles são sempre opcionais &mdash; todas as fases do App podem ser concluídas sem assistir a nenhum anúncio.",
   "Algunos beneficios opcionales (&ldquo;siguiente movimiento&rdquo;, &ldquo;desvincular uno&rdquo;, &ldquo;Glow doble&rdquo;) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los niveles de la App se pueden completar sin ver ningún anuncio."),
@@ -193,6 +197,7 @@ TR = {
   "Algunos beneficios opcionales (un paquete temático de 24 horas, una pista extra para un impostor atrapado) se ofrecen a cambio de ver un anuncio de video con recompensa. Son siempre opcionales &mdash; todos los paquetes y modos principales de la App están disponibles sin ver ningún anuncio."),
  "Last updated: October 16, 2026": ("Última atualização: 16 de outubro de 2026", "Última actualización: 16 de octubre de 2026"),
  "Last updated: October 20, 2026": ("Última atualização: 20 de outubro de 2026", "Última actualización: 20 de octubre de 2026"),
+ "Last updated: November 17, 2026": ("Última atualização: 17 de novembro de 2026", "Última actualización: 17 de noviembre de 2026"),
  "Last updated: October 13, 2026": ("Última atualização: 13 de outubro de 2026", "Última actualización: 13 de octubre de 2026"),
  "Acceptable use": ("Uso aceitável", "Uso aceptable"),
  "You agree not to reverse engineer": (
